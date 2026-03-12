@@ -1,0 +1,42 @@
+/* ===== Page Hero ===== */
+.page-hero {
+  background: #1a1a1a;
+  clear: both;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.page-hero-inner {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.page-hero h1 {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  line-height: 1.25;
+}
+
+.page-hero p {
+  font-size: 1.15em;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+  margin-top: 0.5em;
+}
+
+.page-hero--with-subtitle .page-hero-inner {
+  padding: 20px 20px;
+}
+
+@media (max-width: 767px) {
+  .page-hero-inner {
+    max-width: 420px;
+  }
+
+  .page-hero h1 {
+    font-size: 1.5em;
+  }
+}

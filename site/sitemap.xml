@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: Update base URL below when deployment domain/subfolder is confirmed -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://onecodeworks.com/demos/site/</loc><priority>1.0</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/about/</loc><priority>0.8</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/contact/</loc><priority>0.8</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/portfolio/</loc><priority>0.8</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/</loc><priority>0.8</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/author/onecode/</loc><priority>0.5</priority></url>
+  <!-- Blog posts -->
+  <url><loc>https://onecodeworks.com/demos/site/blog/interview-with-keren-tzamir-brown/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/from-startups-to-women-in-tech/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/keren-demarker-powerful-women-2021/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/the-human-in-the-app-wins/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/potree-library-point-cloud-web-3d/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/virtual-exhibition-israeltech/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/mr-era-reality-check/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/chrome-killed-flash/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/recommended-dev-companies-start-israel/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/flash-to-html5-migration/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/pioneers-in-the-fourth-dimension/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/giga-b-interview-3d-virtual-stores/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/wanted-flash-developer/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/multitasking-challenge-gaming/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/app-development-with-phonegap/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/cross-platform-30-percent-savings/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/congrats-onavo-market-change/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/virtual-mall-online-shopping/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/blog/html5-top-10-enterprise-trends-2014/</loc><priority>0.6</priority></url>
+  <!-- Categories -->
+  <url><loc>https://onecodeworks.com/demos/site/category/news/</loc><priority>0.5</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/category/%D7%9B%D7%9C%D7%9C%D7%99/</loc><priority>0.5</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/category/news/%D7%9E%D7%90%D7%9E%D7%A8%D7%99%D7%9D/</loc><priority>0.5</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/category/news/%D7%9E%D7%90%D7%9E%D7%A8%D7%99%D7%9D/3d-%D7%9E%D7%90%D7%9E%D7%A8%D7%99%D7%9D/</loc><priority>0.5</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/category/html-5/</loc><priority>0.5</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/category/%D7%93%D7%A8%D7%95%D7%A9%D7%99%D7%9D-%D7%91%D7%A4%D7%99%D7%AA%D7%95%D7%97/</loc><priority>0.5</priority></url>
+  <!-- Projects -->
+  <url><loc>https://onecodeworks.com/demos/site/project/mini-game-pazam/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/word-puzzle-engine/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/kkl-quiz-app/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/tap-engine/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/running-monkey/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/plane-obstacle-pazam/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/dont-wake-papa-unity/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/baby-tv-games/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/roll-out-pazam/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/virtual-exhibition-3d/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/labyrinth-game/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/dont-wake-papa-mobile/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/tridshops-3d-shopping/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/flash-to-html5-kkl/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/viva-diamonds/</loc><priority>0.6</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/project/edumetrix/</loc><priority>0.6</priority></url>
+</urlset>

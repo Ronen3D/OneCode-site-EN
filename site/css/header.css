@@ -1,0 +1,264 @@
+/* ===== Header ===== */
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  color: #666;
+  font-size: 15px;
+  font-family: var(--font-primary);
+}
+
+.header-inner {
+  width: 1020px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.header-inner::before,
+.header-inner::after {
+  content: " ";
+  display: table;
+}
+.header-inner::after {
+  clear: both;
+}
+
+/* ===== Logo ===== */
+.logo-wrap {
+  float: left;
+  position: relative;
+  padding: 40px 0 0;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.logo {
+  display: inline;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-image {
+  display: inline-block;
+  vertical-align: middle;
+  height: 55px;
+  width: auto;
+}
+
+/* ===== Navigation ===== */
+.nav-wrap {
+  position: relative;
+  z-index: 99;
+  float: right;
+  line-height: 1.2em;
+  padding-top: 34px;
+}
+
+.mobile-menu-btn {
+  display: none;
+  cursor: pointer;
+  padding: 7.5px 26.25px 7.5px 22.5px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-accent);
+  border: 1px solid rgb(147, 75, 89);
+  border-radius: 4px;
+  font-family: var(--font-primary);
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.menu-icon {
+  margin-right: 0.5em;
+  font-style: normal;
+}
+
+.nav {
+  position: relative;
+  display: block;
+  padding: 0;
+}
+
+.nav-list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list::before,
+.nav-list::after {
+  content: " ";
+  display: table;
+}
+.nav-list::after {
+  clear: both;
+}
+
+.nav-item {
+  position: relative;
+  display: block;
+  float: right;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item + .nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 0 33px;
+  text-decoration: none;
+  color: #666;
+  line-height: 1.4em;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.nav-icon {
+  display: block;
+  position: relative;
+  margin: 0 auto 2px;
+  text-align: center;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.nav-label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.nav-sub {
+  display: block;
+  padding: 0;
+  font-style: italic;
+  font-size: 12.75px;
+}
+
+/* ===== Tablet ===== */
+@media only screen and (max-width: 1019px) and (min-width: 768px) {
+  .nav-wrap {
+    clear: both;
+    padding-top: 0;
+  }
+}
+
+/* ===== Mobile ===== */
+@media only screen and (max-width: 767px) {
+  .header-inner {
+    text-align: center;
+  }
+
+  .logo-wrap {
+    float: none;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .logo-image {
+    max-width: 100%;
+  }
+
+  .nav-wrap {
+    width: 100%;
+    padding: 0 0 20px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mobile-menu-btn {
+    display: inline-block;
+  }
+
+  .nav {
+    display: none;
+    padding: 0;
+  }
+
+  .nav.nav-open {
+    display: block;
+  }
+
+  .nav-list {
+    display: block;
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    background: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .nav-item {
+    display: block;
+    float: none;
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0;
+    white-space: normal;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 11.25px 20px;
+    margin: 0;
+    text-align: right;
+    border-top: 1px solid #ddd;
+    color: #666;
+    line-height: 1.5em;
+  }
+
+  .nav-item:first-child .nav-link {
+    border-top: 0;
+  }
+
+  .nav-link:hover {
+    background-color: var(--color-accent);
+    color: #fff;
+  }
+
+  .nav-label {
+    display: block;
+    text-transform: none;
+    font-weight: 700;
+  }
+
+  .nav-sub {
+    display: block;
+    margin: 0;
+    font-style: italic;
+    text-transform: none;
+    font-size: 12.75px;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+}

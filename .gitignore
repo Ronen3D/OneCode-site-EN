@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Playwright MCP artifacts
+.playwright-mcp/
+
+# Build outputs
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug logs
+*.log

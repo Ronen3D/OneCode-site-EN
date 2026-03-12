@@ -1,0 +1,163 @@
+/* ===== Services Section ===== */
+.services-section {
+  background: var(--color-white);
+  padding: 0;
+}
+
+.services-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-title {
+  text-align: center;
+  font-family: 'Ubuntu', 'Open Sans Hebrew', sans-serif;
+  font-size: 57px;
+  font-weight: 600;
+  color: #2b2b2b;
+  line-height: 1.1;
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  color: #2b2b2b;
+  margin-bottom: 30px;
+}
+
+/* Tech logos row */
+.tech-logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.tech-logo {
+  height: auto;
+  object-fit: contain;
+  max-height: 70px;
+}
+
+/* Services grid */
+.services-row {
+  display: flex;
+  background: var(--color-bg-section);
+  padding: 10px 0;
+}
+
+.service-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.service-icon-wrap {
+  margin-bottom: 10px;
+}
+
+.service-icon {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #282828;
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 1.6;
+}
+
+.read-more-link {
+  color: var(--color-accent);
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+/* Portfolio categories row */
+.portfolio-row {
+  display: flex;
+  margin-top: 18px;
+  gap: 0;
+}
+
+.portfolio-card {
+  width: 20%;
+  padding: 0 10px;
+}
+
+.portfolio-image-link {
+  display: block;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.portfolio-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+  margin-top: 8px;
+}
+
+.portfolio-title-link {
+  color: #444;
+}
+
+.portfolio-title-link:hover {
+  color: var(--color-accent);
+}
+
+.portfolio-desc {
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .portfolio-row {
+    flex-wrap: wrap;
+  }
+  .portfolio-card {
+    width: 33.333%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 32px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .services-row {
+    flex-direction: column;
+  }
+  .portfolio-card {
+    width: 100%;
+  }
+  .tech-logos-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
