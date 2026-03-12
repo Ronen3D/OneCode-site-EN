@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       for (var i = 0; i < projects.length; i++) {
         if (projects[i].slug === slug) { project = projects[i]; projectIndex = i; break; }
       }
-      if (!project) { document.getElementById('project-content').innerHTML = '<p>הפרויקט לא נמצא</p>'; return; }
+      if (!project) { document.getElementById('project-content').innerHTML = '<p>Project not found</p>'; return; }
 
       document.title = project.title + ' - OneCode';
       document.getElementById('project-hero-title').textContent = project.title;

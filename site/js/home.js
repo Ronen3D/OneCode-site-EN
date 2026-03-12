@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     services.forEach(function (s) {
       var extra = '';
       if (s.id === '3') {
-        extra = ' <a href="' + siteBase + 'portfolio/" class="read-more-link">קרא עוד על One Vision</a>';
+        extra = ' <a href="' + siteBase + 'portfolio/" class="read-more-link">Read more about One Vision</a>';
       }
       html += '<div class="service-item">' +
         '<div class="service-icon-wrap"><span class="service-icon">' + s.icon + '</span></div>' +
