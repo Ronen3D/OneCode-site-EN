@@ -2,10 +2,13 @@
 var BlogUtils = {
   categorySlugMap: {
     'News': 'news',
-    'כללי': 'כללי',
-    'מאמרים': 'news/מאמרים',
+    'General': 'כללי',
+    'Articles': 'news/מאמרים',
     '3D': 'news/מאמרים/3d-מאמרים',
     'HTML 5': 'html-5',
+    'Jobs in Development': 'דרושים-בפיתוח',
+    'כללי': 'כללי',
+    'מאמרים': 'news/מאמרים',
     'דרושים בפיתוח': 'דרושים-בפיתוח'
   },
 
@@ -27,7 +30,7 @@ var BlogUtils = {
       '<span>' + post.date + '</span> | ' +
       '<a href="' + siteBase + 'author/onecode/">' + post.author + '</a> | ' +
       cats + ' | ' +
-      '<span>' + post.commentCount + ' תגובות</span>' +
+      '<span>' + post.commentCount + ' comments</span>' +
       '</div></article>';
   },
 
@@ -35,11 +38,11 @@ var BlogUtils = {
     var recent = posts.slice(0, 5);
     var html = '<div class="sidebar">' +
       '<div class="search-widget">' +
-      '<h3 class="widget-title">חיפוש</h3>' +
-      '<input type="text" placeholder="חיפוש...">' +
+      '<h3 class="widget-title">Search</h3>' +
+      '<input type="text" placeholder="Search...">' +
       '<button type="button">🔍</button>' +
       '</div>' +
-      '<div><h3 class="widget-title">פוסטים אחרונים</h3>' +
+      '<div><h3 class="widget-title">Recent Posts</h3>' +
       '<ul class="sidebar-posts">';
     recent.forEach(function (p) {
       html += '<li><a href="' + siteBase + 'blog/' + p.slug + '/">' + p.title + '</a></li>';

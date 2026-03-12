@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
       for (var i = 0; i < data.blogPosts.length; i++) {
         if (data.blogPosts[i].slug === slug) { post = data.blogPosts[i]; break; }
       }
-      if (!post) { document.getElementById('post-content').innerHTML = '<p>הפוסט לא נמצא</p>'; return; }
+      if (!post) { document.getElementById('post-content').innerHTML = '<p>Post not found</p>'; return; }
 
       /* Page title */
       document.title = post.title + ' - OneCode';
@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       /* Body */
       var body = '<p>' + post.excerpt + '</p>' +
-        '<p>תוכן המאמר המלא יופיע כאן. זהו תוכן לדוגמה עבור הפוסט.</p>' +
-        '<p>OneCode מתמחה בפיתוח אפליקציות מתקדמות, משחקים ופתרונות תלת מימד עבור ארגונים, חברות סטארט-אפ ועסקים.</p>';
+        '<p>The full article content will appear here. This is sample content for the post.</p>' +
+        '<p>OneCode specializes in developing advanced applications, games, and 3D solutions for organizations, start-up companies, and businesses.</p>';
       document.getElementById('post-body').innerHTML = body;
 
       /* Meta */
@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
         '<span>' + post.date + '</span> | ' +
         '<span>By <a href="' + siteBase + 'author/onecode/">' + post.author + '</a></span> | ' +
         '<span>In ' + cats + '</span> | ' +
-        '<a href="#respond">' + post.commentCount + ' תגובות</a>';
+        '<a href="#respond">' + post.commentCount + ' comments</a>';
 
       /* Comments */
       document.getElementById('post-comments').innerHTML =
-        '<h2>תגובות (' + post.commentCount + ')</h2>' +
-        '<h3 id="respond">השאירו תגובה</h3>';
+        '<h2>Comments (' + post.commentCount + ')</h2>' +
+        '<h3 id="respond">Leave a Reply</h3>';
 
       /* Sidebar */
       document.getElementById('blog-sidebar').innerHTML = BlogUtils.renderSidebar(data.blogPosts);
