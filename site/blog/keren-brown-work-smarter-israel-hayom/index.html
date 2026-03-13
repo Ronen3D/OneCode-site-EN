@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <link rel="icon" href="../../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:locale" content="he_IL">
   <meta property="og:site_name" content="OneCode">
   <meta name="twitter:card" content="summary">
@@ -45,12 +45,18 @@
 
 <main id="content">
   <section class="page-hero">
-    <div class="page-hero-inner"><h1 id="category-hero-title"></h1></div>
+    <div class="page-hero-inner"><nav id="post-breadcrumb" class="post-breadcrumb"></nav><h1 id="post-hero-title"></h1></div>
   </section>
-  <section class="blog-page">
+  <section class="blog-page blog-post-page">
     <div class="blog-container">
-      <div class="blog-main">
-        <div id="category-list"></div>
+      <div class="blog-main" id="post-content">
+        <article class="post-article">
+          <img id="post-image" class="post-featured-image" src="" alt="" width="695" height="417">
+          <div id="post-body" class="post-body"></div>
+          <div id="post-meta" class="post-meta"></div>
+        </article>
+        <section id="post-comments" class="post-comments"></section>
+        <section id="related-posts" class="related-posts"></section>
       </div>
       <aside class="blog-sidebar" id="blog-sidebar"></aside>
     </div>
@@ -78,6 +84,6 @@
 <script>var siteBase = '../../';</script>
 <script src="../../js/main.js"></script>
 <script src="../../js/blog-utils.js"></script>
-<script src="../../js/category.js"></script>
+<script src="../../js/blog-post.js"></script>
 </body>
 </html>

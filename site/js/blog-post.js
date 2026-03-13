@@ -7,10 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var post = null;
+      var postIndex = -1;
       for (var i = 0; i < data.blogPosts.length; i++) {
-        if (data.blogPosts[i].slug === slug) { post = data.blogPosts[i]; break; }
+        if (data.blogPosts[i].slug === slug) { post = data.blogPosts[i]; postIndex = i; break; }
       }
-      if (!post) { document.getElementById('post-content').innerHTML = '<p>Post not found</p>'; return; }
+      if (!post) { document.getElementById('post-content').innerHTML = '<p>הפוסט לא נמצא</p>'; return; }
 
       /* Page title */
       document.title = post.title + ' - OneCode';
@@ -20,30 +21,64 @@ document.addEventListener('DOMContentLoaded', function () {
       /* Hero */
       document.getElementById('post-hero-title').textContent = post.title;
 
+      /* Breadcrumb */
+      var breadcrumbEl = document.getElementById('post-breadcrumb');
+      if (breadcrumbEl) {
+        breadcrumbEl.innerHTML =
+          '<a href="' + siteBase + '">ראשי</a>' +
+          '<span class="breadcrumb-separator">›</span>' +
+          '<a href="' + siteBase + 'blog/">חדשות</a>' +
+          '<span class="breadcrumb-separator">›</span>' +
+          '<span>' + post.title + '</span>';
+      }
+
       /* Featured image */
       var imgEl = document.getElementById('post-image');
       if (imgEl) { imgEl.src = siteBase + post.imageUrl; imgEl.alt = post.title; }
 
-      /* Body */
-      var body = '<p>' + post.excerpt + '</p>' +
-        '<p>The full article content will appear here. This is sample content for the post.</p>' +
-        '<p>OneCode specializes in developing advanced applications, games, and 3D solutions for organizations, start-up companies, and businesses.</p>';
-      document.getElementById('post-body').innerHTML = body;
-
-      /* Meta */
-      var cats = post.categories.map(function (c) {
-        return '<a href="' + BlogUtils.getCategoryUrl(c) + '">' + c + '</a>';
-      }).join(', ');
+      /* Meta (above body) */
       document.getElementById('post-meta').innerHTML =
-        '<span>' + post.date + '</span> | ' +
-        '<span>By <a href="' + siteBase + 'author/onecode/">' + post.author + '</a></span> | ' +
-        '<span>In ' + cats + '</span> | ' +
-        '<a href="#respond">' + post.commentCount + ' comments</a>';
+        '<span>' + post.date + '</span>' +
+        '<span class="meta-separator">&middot;</span>' +
+        '<a href="' + siteBase + 'author/onecode/">' + post.author + '</a>';
+
+      /* Body */
+      var body = '<p>' + post.excerpt + '</p>';
+      if (post.externalUrl) {
+        body += '<p><a href="' + post.externalUrl + '" target="_blank" rel="noopener noreferrer" class="external-article-link">לכתבה המלאה &larr;</a></p>';
+      } else {
+        body += '<p>תוכן המאמר המלא יופיע כאן. זהו תוכן לדוגמה עבור הפוסט.</p>' +
+          '<p>OneCode מתמחה בפיתוח אפליקציות מתקדמות, משחקים ופתרונות תלת מימד עבור ארגונים, חברות סטארט-אפ ועסקים.</p>';
+      }
+      document.getElementById('post-body').innerHTML = body;
 
       /* Comments */
       document.getElementById('post-comments').innerHTML =
-        '<h2>Comments (' + post.commentCount + ')</h2>' +
-        '<h3 id="respond">Leave a Reply</h3>';
+        '<h2>תגובות (' + post.commentCount + ')</h2>' +
+        '<h3 id="respond">השאירו תגובה</h3>';
+
+      /* Related posts */
+      var relatedEl = document.getElementById('related-posts');
+      if (relatedEl) {
+        var related = data.blogPosts.filter(function (p) {
+          if (p.slug === post.slug) return false;
+          return p.categories.some(function (c) { return post.categories.indexOf(c) >= 0; });
+        }).slice(0, 3);
+        if (related.length === 0) {
+          related = data.blogPosts.filter(function (p) { return p.slug !== post.slug; }).slice(0, 3);
+        }
+        var relHtml = '<h3 class="related-posts-title">מאמרים נוספים</h3><div class="related-posts-grid">';
+        related.forEach(function (r) {
+          relHtml += '<div class="related-post-card">' +
+            '<a href="' + siteBase + 'blog/' + r.slug + '/"><img src="' + siteBase + r.imageUrl + '" alt="' + r.title + '" loading="lazy"></a>' +
+            '<div class="related-post-card-body">' +
+            '<h4><a href="' + siteBase + 'blog/' + r.slug + '/">' + r.title + '</a></h4>' +
+            '<div class="related-post-date">' + r.date + '</div>' +
+            '</div></div>';
+        });
+        relHtml += '</div>';
+        relatedEl.innerHTML = relHtml;
+      }
 
       /* Sidebar */
       document.getElementById('blog-sidebar').innerHTML = BlogUtils.renderSidebar(data.blogPosts);

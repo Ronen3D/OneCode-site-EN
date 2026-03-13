@@ -3,23 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 - הדף לא נמצא - OneCode</title>
-  <meta name="description" content="הדף המבוקש לא נמצא">
-  <link rel="icon" href="./favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-  <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="./css/globals.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/not-found.css">
+  <title>OneCode</title>
+  <meta name="description" content="">
+  <link rel="icon" href="../../../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="OneCode">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="../../../css/globals.css">
+  <link rel="stylesheet" href="../../../css/header.css">
+  <link rel="stylesheet" href="../../../css/footer.css">
+  <link rel="stylesheet" href="../../../css/page-hero.css">
+  <link rel="stylesheet" href="../../../css/blog.css">
 </head>
 <body class="rtl">
 
 <header class="header">
   <div class="header-inner">
     <h1 class="logo-wrap">
-      <a href="./" class="logo" title="OneCode | בית תוכנה לפיתוח אפליקציות - תלת מימד ומשחקים">
-        <img src="./images/uploads/2013/10/onecode-novision.jpg" alt="OneCode logo" class="logo-image" width="339" height="55">
+      <a href="../../../" class="logo" title="OneCode | בית תוכנה לפיתוח אפליקציות - תלת מימד ומשחקים">
+        <img src="../../../images/uploads/2013/10/onecode-novision.jpg" alt="OneCode logo" class="logo-image" width="339" height="55">
         <span class="sr-only">OneCode</span>
       </a>
     </h1>
@@ -27,12 +31,12 @@
       <button class="mobile-menu-btn" aria-label="פתח תפריט" aria-expanded="false" type="button"><span class="menu-icon">☰</span> Menu</button>
       <nav class="nav" role="navigation">
         <ul class="nav-list">
-          <li class="nav-item"><a href="./portfolio/" class="nav-link"><i class="nav-icon">☆</i><span class="nav-label">התמחויות</span><small class="nav-sub">פיתוח אפליקציות</small></a></li>
-          <li class="nav-item"><a href="./portfolio/" class="nav-link"><i class="nav-icon">➢</i><span class="nav-label">פתרונות</span><small class="nav-sub">למקצוענים</small></a></li>
-          <li class="nav-item"><a href="./portfolio/" class="nav-link"><i class="nav-icon">💼</i><span class="nav-label">פרויקטים</span><small class="nav-sub">ואפליקציות</small></a></li>
-          <li class="nav-item"><a href="./blog/" class="nav-link"><i class="nav-icon">📣</i><span class="nav-label">חדשות</span><small class="nav-sub">ומאמרים</small></a></li>
-          <li class="nav-item"><a href="./about/" class="nav-link"><i class="nav-icon">👥</i><span class="nav-label">אודותינו</span><small class="nav-sub">והצוות</small></a></li>
-          <li class="nav-item"><a href="./contact/" class="nav-link"><i class="nav-icon">📱</i><span class="nav-label">צור קשר</span><small class="nav-sub"></small></a></li>
+          <li class="nav-item"><a href="../../../portfolio/" class="nav-link"><i class="nav-icon">☆</i><span class="nav-label">התמחויות</span><small class="nav-sub">פיתוח אפליקציות</small></a></li>
+          <li class="nav-item"><a href="../../../portfolio/" class="nav-link"><i class="nav-icon">➢</i><span class="nav-label">פתרונות</span><small class="nav-sub">למקצוענים</small></a></li>
+          <li class="nav-item"><a href="../../../portfolio/" class="nav-link"><i class="nav-icon">💼</i><span class="nav-label">פרויקטים</span><small class="nav-sub">ואפליקציות</small></a></li>
+          <li class="nav-item"><a href="../../../blog/" class="nav-link"><i class="nav-icon">📣</i><span class="nav-label">חדשות</span><small class="nav-sub">ומאמרים</small></a></li>
+          <li class="nav-item"><a href="../../../about/" class="nav-link"><i class="nav-icon">👥</i><span class="nav-label">אודותינו</span><small class="nav-sub">והצוות</small></a></li>
+          <li class="nav-item"><a href="../../../contact/" class="nav-link"><i class="nav-icon">📱</i><span class="nav-label">צור קשר</span><small class="nav-sub"></small></a></li>
         </ul>
       </nav>
     </div>
@@ -40,10 +44,16 @@
 </header>
 
 <main id="content">
-  <section class="not-found">
-    <h1>404</h1>
-    <p>הדף המבוקש לא נמצא</p>
-    <a href="./">חזרה לדף הבית</a>
+  <section class="page-hero">
+    <div class="page-hero-inner"><h1 id="category-hero-title"></h1></div>
+  </section>
+  <section class="blog-page">
+    <div class="blog-container">
+      <div class="blog-main">
+        <div id="category-list"></div>
+      </div>
+      <aside class="blog-sidebar" id="blog-sidebar"></aside>
+    </div>
   </section>
 </main>
 
@@ -65,7 +75,9 @@
   </section>
 </footer>
 
-<script>var siteBase = './';</script>
-<script src="./js/main.js"></script>
+<script>var siteBase = '../../../';</script>
+<script src="../../../js/main.js"></script>
+<script src="../../../js/blog-utils.js"></script>
+<script src="../../../js/category.js"></script>
 </body>
 </html>
