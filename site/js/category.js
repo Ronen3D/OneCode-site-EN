@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Categories with their URL slug segments and display names */
   var categories = [
     { name: 'News', slugPath: 'news' },
-    { name: 'General', slugPath: 'general' },
-    { name: 'Articles', slugPath: 'news/articles' },
+    { name: 'כללי', slugPath: 'general' },
+    { name: 'מאמרים', slugPath: 'news/articles' },
     { name: '3D', slugPath: 'news/articles/3d-articles' },
-    { name: 'HTML5', slugPath: 'html-5' },
-    { name: 'Dev Jobs', slugPath: 'dev-jobs' }
+    { name: 'HTML 5', slugPath: 'html-5' },
+    { name: 'דרושים בפיתוח', slugPath: 'dev-jobs' }
   ];
 
   /* Extract slug path from URL: /category/news/articles/ → news/articles */
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (!category) {
-    document.getElementById('category-list').innerHTML = '<p>Category not found</p>';
+    document.getElementById('category-list').innerHTML = '<p>הקטגוריה לא נמצאה</p>';
     return;
   }
 
@@ -30,22 +30,22 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('category-hero-title').textContent = 'Posts in ' + category.name;
 
   var metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) metaDesc.setAttribute('content', 'Articles about ' + category.name + ' on the OneCode website');
+  if (metaDesc) metaDesc.setAttribute('content', 'מאמרים בנושא ' + category.name + ' באתר OneCode');
 
   fetch(siteBase + 'data/site-data.json')
     .then(function (r) { return r.json(); })
     .then(function (data) {
-      var filtered = data.blogPosts.filter(function (post) {
+      var filtered = BlogUtils.sortPostsByDate(data.blogPosts.filter(function (post) {
         return post.categories.some(function (c) {
           return c.toLowerCase() === category.name.toLowerCase();
         });
-      });
+      }));
 
       var list = document.getElementById('category-list');
       if (list) {
         var html = '';
         filtered.forEach(function (p) { html += BlogUtils.renderBlogCard(p); });
-        if (filtered.length === 0) html = '<p>No posts in this category.</p>';
+        if (filtered.length === 0) html = '<p>אין פוסטים בקטגוריה זו.</p>';
         list.innerHTML = html;
       }
 

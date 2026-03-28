@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nav.classList.toggle('nav-open');
       var isOpen = nav.classList.contains('nav-open');
       menuBtn.setAttribute('aria-expanded', isOpen);
-      menuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      menuBtn.setAttribute('aria-label', isOpen ? 'סגור תפריט' : 'פתח תפריט');
     });
   }
 
@@ -19,6 +19,20 @@ document.addEventListener('DOMContentLoaded', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+  /* ===== Mobile dropdown toggle ===== */
+  var dropdownItems = document.querySelectorAll('.nav-item-dropdown');
+  dropdownItems.forEach(function (item) {
+    var trigger = item.querySelector('.nav-link-trigger');
+    if (trigger) {
+      trigger.addEventListener('click', function (e) {
+        if (window.innerWidth <= 767) {
+          e.preventDefault();
+          item.classList.toggle('dropdown-open');
+        }
+      });
+    }
+  });
 
   /* ===== Active nav highlighting ===== */
   var path = window.location.pathname;

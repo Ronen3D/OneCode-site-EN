@@ -147,7 +147,16 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+}
+
+.post-image-credit {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  text-align: left;
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
 .post-body {
@@ -159,6 +168,35 @@
 
 .post-body p {
   margin-bottom: 1.2em;
+}
+
+.post-body h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.post-video {
+  margin: 1.5em 0;
+}
+
+.post-video iframe {
+  max-width: 100%;
+}
+
+.external-article-link {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #0073aa;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+.external-article-link:hover {
+  background-color: #005580;
 }
 
 .post-meta {

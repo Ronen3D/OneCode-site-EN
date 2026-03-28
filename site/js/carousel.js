@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+function initCarousel() {
   var VISIBLE = 7;
   var SCROLL_COUNT = 5;
   var AUTOPLAY_MS = 5000;
@@ -103,4 +103,4 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', function () {
     updatePosition(false);
   });
-});
+}

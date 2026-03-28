@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       for (var i = 0; i < data.blogPosts.length; i++) {
         if (data.blogPosts[i].slug === slug) { post = data.blogPosts[i]; postIndex = i; break; }
       }
-      if (!post) { document.getElementById('post-content').innerHTML = '<p>Post not found</p>'; return; }
+      if (!post) { document.getElementById('post-content').innerHTML = '<p>הפוסט לא נמצא</p>'; return; }
 
       /* Page title */
       document.title = post.title + ' - OneCode';
@@ -25,16 +25,25 @@ document.addEventListener('DOMContentLoaded', function () {
       var breadcrumbEl = document.getElementById('post-breadcrumb');
       if (breadcrumbEl) {
         breadcrumbEl.innerHTML =
-          '<a href="' + siteBase + '">Home</a>' +
+          '<a href="' + siteBase + '">ראשי</a>' +
           '<span class="breadcrumb-separator">›</span>' +
-          '<a href="' + siteBase + 'blog/">News</a>' +
+          '<a href="' + siteBase + 'blog/">חדשות</a>' +
           '<span class="breadcrumb-separator">›</span>' +
           '<span>' + post.title + '</span>';
       }
 
       /* Featured image */
       var imgEl = document.getElementById('post-image');
-      if (imgEl) { imgEl.src = siteBase + post.imageUrl; imgEl.alt = post.title; }
+      if (imgEl) {
+        imgEl.src = siteBase + post.imageUrl;
+        imgEl.alt = post.title;
+        if (post.imageCredit) {
+          var creditEl = document.createElement('small');
+          creditEl.className = 'post-image-credit';
+          creditEl.textContent = post.imageCredit;
+          imgEl.parentNode.insertBefore(creditEl, imgEl.nextSibling);
+        }
+      }
 
       /* Meta (above body) */
       document.getElementById('post-meta').innerHTML =
@@ -43,19 +52,24 @@ document.addEventListener('DOMContentLoaded', function () {
         '<a href="' + siteBase + 'author/onecode/">' + post.author + '</a>';
 
       /* Body */
-      var body = '<p>' + post.excerpt + '</p>';
-      if (post.externalUrl) {
-        body += '<p><a href="' + post.externalUrl + '" target="_blank" rel="noopener noreferrer" class="external-article-link">Read the full article &rarr;</a></p>';
+      if (post.contentUrl) {
+        fetch(siteBase + post.contentUrl)
+          .then(function (r) { return r.text(); })
+          .then(function (html) {
+            document.getElementById('post-body').innerHTML = html;
+          });
       } else {
-        body += '<p>The full article content will appear here. This is placeholder copy for the post.</p>' +
-          '<p>OneCode specializes in advanced applications, games, and 3D solutions for organizations, startups, and enterprises.</p>';
+        var body = '<p>' + post.excerpt + '</p>';
+        if (post.externalUrl) {
+          body += '<p><a href="' + post.externalUrl + '" target="_blank" rel="noopener noreferrer" class="external-article-link">לכתבה המלאה &#8592;</a></p>';
+        }
+        document.getElementById('post-body').innerHTML = body;
       }
-      document.getElementById('post-body').innerHTML = body;
 
       /* Comments */
       document.getElementById('post-comments').innerHTML =
-        '<h2>Comments (' + post.commentCount + ')</h2>' +
-        '<h3 id="respond">Leave a comment</h3>';
+        '<h2>תגובות (' + post.commentCount + ')</h2>' +
+        '<h3 id="respond">השאירו תגובה</h3>';
 
       /* Related posts */
       var relatedEl = document.getElementById('related-posts');
@@ -67,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (related.length === 0) {
           related = data.blogPosts.filter(function (p) { return p.slug !== post.slug; }).slice(0, 3);
         }
-        var relHtml = '<h3 class="related-posts-title">More articles</h3><div class="related-posts-grid">';
+        var relHtml = '<h3 class="related-posts-title">מאמרים נוספים</h3><div class="related-posts-grid">';
         related.forEach(function (r) {
           relHtml += '<div class="related-post-card">' +
             '<a href="' + siteBase + 'blog/' + r.slug + '/"><img src="' + siteBase + r.imageUrl + '" alt="' + r.title + '" loading="lazy"></a>' +

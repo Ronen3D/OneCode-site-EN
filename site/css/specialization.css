@@ -1,0 +1,441 @@
+/* ===== Specialization Page Content ===== */
+.spec-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+.spec-content-inner {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Main text column (right side in RTL) */
+.spec-text {
+  flex: 1 1 60%;
+  font-family: 'Segoe UI', 'Open Sans Hebrew', Arial, sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.75;
+}
+
+.spec-text p {
+  margin-bottom: 16px;
+}
+
+/* Quote bubble column (left side in RTL) */
+.spec-quote {
+  flex: 0 0 280px;
+  border: 1px solid #d5d5d5;
+  border-top: 3px solid #5bb5a2;
+  background: var(--color-white);
+  padding: 20px 18px;
+  position: relative;
+  font-family: 'Segoe UI', 'Open Sans Hebrew', Arial, sans-serif;
+}
+
+.spec-quote-text {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--color-text-dark);
+  line-height: 1.7;
+  margin: 0 0 18px;
+  border: none;
+  padding: 0;
+}
+
+.spec-quote-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spec-quote-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.spec-quote-caption {
+  font-size: 12px;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+/* ===== Features Grid Section ===== */
+.spec-features {
+  background: var(--color-bg-section);
+  padding: 40px 0 50px;
+}
+
+.spec-features-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.spec-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+}
+
+.spec-feature-card {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.spec-feature-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 14px;
+}
+
+.spec-feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.spec-feature-title {
+  font-family: 'Segoe UI', 'Open Sans Hebrew', Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #282828;
+  margin-bottom: 8px;
+}
+
+.spec-feature-desc {
+  font-family: 'Segoe UI', 'Open Sans Hebrew', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.65;
+}
+
+/* ===== Hero Image ===== */
+.spec-hero-image {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.spec-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Inline Quote Block ===== */
+.spec-quote-block {
+  border: 1px solid #d5d5d5;
+  border-top: 3px solid #5bb5a2;
+  background: var(--color-white);
+  padding: 25px 28px 20px;
+  margin: 24px 0;
+  position: relative;
+  font-family: 'Segoe UI', 'Open Sans Hebrew', Arial, sans-serif;
+}
+
+.spec-quote-block::before {
+  content: '\201C';
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 60px;
+  color: #d5d5d5;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+
+.spec-quote-block-text {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--color-text-dark);
+  line-height: 1.75;
+  margin: 0 0 18px;
+  padding-right: 30px;
+}
+
+.spec-quote-block-author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.spec-quote-block-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.spec-quote-block-caption {
+  font-size: 12px;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+/* ===== Bold Highlight Paragraph ===== */
+.spec-text .spec-bold {
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+/* ===== Spec Section Heading ===== */
+.spec-text h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin: 8px 0 12px;
+}
+
+/* ===== Bullet List Section ===== */
+.spec-bullets {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 35px 20px 30px;
+}
+
+.spec-bullets-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spec-bullets-list li {
+  position: relative;
+  padding-right: 28px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+.spec-bullets-list li::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #5bb5a2;
+}
+
+.spec-bullets-list li strong {
+  color: var(--color-text-dark);
+  font-weight: 700;
+}
+
+/* ===== CTA Banner ===== */
+.spec-cta {
+  max-width: var(--max-width);
+  margin: 0 auto 10px;
+  padding: 0 20px;
+}
+
+.spec-cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  padding: 18px 28px;
+}
+
+.spec-cta-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  line-height: 1.6;
+}
+
+.spec-cta-btn {
+  display: inline-block;
+  background: #5bb5a2;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--transition-fast);
+}
+
+.spec-cta-btn:hover {
+  background: #4a9e8d;
+}
+
+/* ===== Content Sections ===== */
+.spec-sections {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 20px 50px;
+}
+
+.spec-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.spec-section:last-child {
+  border-bottom: none;
+}
+
+.spec-section-icon {
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #5bb5a2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spec-section-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: #5bb5a2;
+}
+
+.spec-section-body {
+  flex: 1;
+}
+
+.spec-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 10px;
+}
+
+.spec-section-text {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ===== Image Showcase Grid ===== */
+.spec-showcase {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+.spec-showcase-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.spec-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.spec-showcase-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.spec-showcase-card {
+  text-align: center;
+}
+
+.spec-showcase-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.spec-showcase-card p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 767px) {
+  .spec-content-inner {
+    flex-direction: column;
+  }
+
+  .spec-quote {
+    flex: none;
+    width: 100%;
+  }
+
+  .spec-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-cta-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .spec-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .spec-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-showcase-grid--2col {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-text-img {
+    float: none;
+    display: block;
+    margin: 16px auto;
+    max-width: 60%;
+  }
+}
+
+/* ===== Inline Text Image ===== */
+.spec-text-img {
+  float: left;
+  max-width: 200px;
+  height: auto;
+  margin: 4px 20px 16px 0;
+  border-radius: 4px;
+}
+
+/* ===== Sidebar Photo (large, non-circular) ===== */
+.spec-quote-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.spec-quote-photo-caption {
+  font-size: 12px;
+  color: var(--color-text);
+  line-height: 1.5;
+  margin-bottom: 18px;
+  display: block;
+}
