@@ -1,99 +1,775 @@
-﻿{
+{
   "services": [
-    {"id": "1", "title": "Cross Platform with WebGL", "description": "הדרך הנכונה לבניית אפליקציות - תוך חסכון מיידי וארוך טווח של עלויות פיתוח ואחזקה. פיתוח לכל הפלטפורמות בקוד אחד - אנדרואיד, אייפון, כל סוגי הדפדפנים, SmartTV, רשתות חברתיות ועוד.", "icon": "🌐", "iconImage": "images/services/UserCircle.png"},
-    {"id": "2", "title": "חוויית משתמש עוצמתית ב- 3D", "description": "אפליקציות משחקים ותלת מימד (3D) מהוות גורם משיכה עבור גולשים. יותר מכל דף אינטרנט רגיל ואפליקציה, התלת מימד (3D) מייצר חוויית משתמש עוצמתית ואינטראקציה חזקה שמשאירה את המשתמשים וגורמת להם לחזור.", "icon": "🎮", "iconImage": "images/services/ThreeDCubes.png"},
-    {"id": "3", "title": "One Vision", "description": "OneCode מציעה אפשרות לפיתוח עסקי מלא, כדי להוציא את המירב מהשקעה באפליקציה. כולל הכנת תוכנית עסקית, בניית מצגת למשקיעים, אפיון, ותכנון והוצאה לפועל של מהלכי שיווק.", "icon": "💡", "iconImage": "images/services/VisionEye.png"}
+    {
+      "id": "1",
+      "title": "Cross Platform with WebGL",
+      "description": "Build once and deploy everywhere across web, mobile, and interactive screens.",
+      "icon": "🌐",
+      "iconImage": "images/services/UserCircle.png"
+    },
+    {
+      "id": "2",
+      "title": "3D User Experience",
+      "description": "Create engaging 3D experiences that improve interaction and retention.",
+      "icon": "🎮",
+      "iconImage": "images/services/ThreeDCubes.png"
+    },
+    {
+      "id": "3",
+      "title": "One Vision",
+      "description": "Business and product support from planning through launch and growth.",
+      "icon": "💡",
+      "iconImage": "images/services/VisionEye.png"
+    }
   ],
   "specializations": [
-    {"id": "1", "title": "WebGL", "description": "WebGL הוא API של Javascript שמאפשר פיתוח אפליקציות עם גרפיקה מורכבת ותלת מימדית (3D) באינטרנט ללא התקנת פלאג-אין. WebGL מאפשר היום בדפדפנים את מה שבעבר היה נחלת קונסולות משחקים בלבד. אפשר לפתח בקוד אחד אפליקציית 3D מתקדמת שתרוץ על הדפדפנים במחשב, במובייל ובטלוויזיה חכמה.", "imageUrl": "images/specializations/webgl-logo.png", "imageWidth": "40%"},
-    {"id": "2", "title": "HTML5", "description": "HTML5 הולך ומבסס עצמו כקוד סטנדרטי ומרכזי לאפליקציות באינטרנט, ואפילו עבור אפליקציות מחוץ לאינטרנט. הגלגול העדכני של שפת ה-HTML מאפשר לנו ליצור סביבות עשירות ומתקדמות, הפועלות על כל פלטפורמה.", "imageUrl": "images/uploads/2013/11/HTML5_Logo_512.png", "imageWidth": "20%"}
+    {
+      "id": "1",
+      "title": "WebGL",
+      "description": "WebGL enables advanced 3D graphics in browsers without plug-ins across desktop and mobile.",
+      "imageUrl": "images/specializations/webgl-logo.png",
+      "imageWidth": "40%"
+    },
+    {
+      "id": "2",
+      "title": "HTML5",
+      "description": "HTML5 is a standard foundation for modern cross-platform web applications.",
+      "imageUrl": "images/uploads/2013/11/HTML5_Logo_512.png",
+      "imageWidth": "20%"
+    }
   ],
   "portfolioCategories": [
-    {"id": "1", "title": "אפליקציות תלת מימד", "imageUrl": "images/portfolio/3d-apps.png", "description": "אפליקציות המשלבות תלת מימד (3D) מהוות כיום את הכלי החזק ביותר ללכידת תשומת לב של גולשים לאורך זמן, ואמצעי מצוין ליצירת המחשה של מוצרים, וסביבות למידה מתקדמות."},
-    {"id": "2", "title": "פיתוח Cross Platform", "imageUrl": "images/uploads/2013/10/silder-06.png", "description": "פיתוח חוצה פלטפורמות עונה בצורה הטובה ביותר על הצורך לספק לגולשים מענה אחיד בניידים, במחשבים אישיים ובכל מקום אחר"},
-    {"id": "3", "title": "אפליקציות מובייל", "imageUrl": "images/uploads/2013/02/app.jpg", "description": "פיתוח חוצה פלטפורמות עונה בצורה הטובה ביותר על הצורך לספק לגולשים מענה אחיד בניידים, במחשבים אישיים ובכל מקום אחר"},
-    {"id": "4", "title": "פיתוח משחקים", "imageUrl": "images/uploads/2013/10/silder-061.png", "description": "משחקי מחשב הם כלים עוצמתיים לשיווק, להעברת מסרים וליצירת רווחים. אך לא כל משחק! OneCode יודעת מה צריך כדי להכניס למשחק שלכם את האלמנטים הנכונים."},
-    {"id": "5", "title": "פיתוח HTML5 ו- WebGL", "imageUrl": "images/uploads/2014/01/amazon.png", "description": "משחקי מחשב הם כלים עוצמתיים לשיווק, להעברת מסרים וליצירת רווחים. אך לא כל משחק! OneCode יודעת מה צריך כדי להכניס למשחק שלכם את האלמנטים הנכונים."}
+    {
+      "id": "1",
+      "title": "3D Applications",
+      "imageUrl": "images/portfolio/3d-apps.png",
+      "description": "Selected projects and product experiences delivered by OneCode."
+    },
+    {
+      "id": "2",
+      "title": "Cross Platform Development",
+      "imageUrl": "images/uploads/2013/10/silder-06.png",
+      "description": "Selected projects and product experiences delivered by OneCode."
+    },
+    {
+      "id": "3",
+      "title": "Mobile Applications",
+      "imageUrl": "images/uploads/2013/02/app.jpg",
+      "description": "Selected projects and product experiences delivered by OneCode."
+    },
+    {
+      "id": "4",
+      "title": "Game Development",
+      "imageUrl": "images/uploads/2013/10/silder-061.png",
+      "description": "Selected projects and product experiences delivered by OneCode."
+    },
+    {
+      "id": "5",
+      "title": "HTML5 and WebGL Development",
+      "imageUrl": "images/uploads/2014/01/amazon.png",
+      "description": "Selected projects and product experiences delivered by OneCode."
+    }
   ],
   "clients": [
-    {"id": "1", "name": "BMBY", "logoUrl": "images/uploads/2018/11/bmby-small2.png"},
-    {"id": "2", "name": "ברוקנר מילקה", "logoUrl": "images/uploads/2018/11/brokner-milka-small.jpg"},
-    {"id": "3", "name": "כפר סבא", "logoUrl": "images/uploads/2018/05/kafar-saba2.jpg"},
-    {"id": "4", "name": "Screemo", "logoUrl": "images/uploads/2017/12/screemo_logo.jpg"},
-    {"id": "5", "name": "3DOptix", "logoUrl": "images/uploads/2022/01/3DOptix_LOGO_wide_white_500_410x.jpg"},
-    {"id": "6", "name": "Dronomy", "logoUrl": "images/uploads/2022/01/dronomy-w-175.png"},
-    {"id": "7", "name": "Deeper Visual", "logoUrl": "images/uploads/2022/01/deepervisual.png"},
-    {"id": "8", "name": "SodaStream", "logoUrl": "images/uploads/2015/01/sodastream-e1421773983561.jpg"},
-    {"id": "9", "name": "קק\"ל", "logoUrl": "images/uploads/2015/02/kakal.jpg"},
-    {"id": "10", "name": "Toontak", "logoUrl": "images/uploads/2015/02/toontak.jpg"},
-    {"id": "11", "name": "CA", "logoUrl": "images/uploads/2015/02/ca.jpg"},
-    {"id": "12", "name": "Medium", "logoUrl": "images/uploads/2015/01/medium.jpg"},
-    {"id": "13", "name": "Playtika", "logoUrl": "images/uploads/2015/01/playtica.jpg"},
-    {"id": "14", "name": "SodaStream", "logoUrl": "images/uploads/2015/01/sodastream-e1421773983561.jpg"},
-    {"id": "15", "name": "888", "logoUrl": "images/uploads/2016/02/8881.png"},
-    {"id": "16", "name": "ACE", "logoUrl": "images/uploads/2016/02/ace145X102.png"},
-    {"id": "17", "name": "BabyTV", "logoUrl": "images/uploads/2017/11/Babytvlogo.jpg"},
-    {"id": "18", "name": "Helen Doron", "logoUrl": "images/uploads/2016/02/helen-doron-145X102.jpg"},
-    {"id": "19", "name": "TridiShops", "logoUrl": "images/uploads/2016/02/tridishops145X102.jpg"},
-    {"id": "20", "name": "Baby TV", "logoUrl": "images/uploads/2017/11/Babytvlogo.jpg"},
-    {"id": "21", "name": "PAZAM", "logoUrl": "images/uploads/2017/11/PAZAM.jpg"}
+    {
+      "id": "1",
+      "name": "BMBY",
+      "logoUrl": "images/uploads/2018/11/bmby-small2.png"
+    },
+    {
+      "id": "2",
+      "name": "Client",
+      "logoUrl": "images/uploads/2018/11/brokner-milka-small.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Client",
+      "logoUrl": "images/uploads/2018/05/kafar-saba2.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Screemo",
+      "logoUrl": "images/uploads/2017/12/screemo_logo.jpg"
+    },
+    {
+      "id": "5",
+      "name": "3DOptix",
+      "logoUrl": "images/uploads/2022/01/3DOptix_LOGO_wide_white_500_410x.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Dronomy",
+      "logoUrl": "images/uploads/2022/01/dronomy-w-175.png"
+    },
+    {
+      "id": "7",
+      "name": "Deeper Visual",
+      "logoUrl": "images/uploads/2022/01/deepervisual.png"
+    },
+    {
+      "id": "8",
+      "name": "SodaStream",
+      "logoUrl": "images/uploads/2015/01/sodastream-e1421773983561.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Client",
+      "logoUrl": "images/uploads/2015/02/kakal.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Toontak",
+      "logoUrl": "images/uploads/2015/02/toontak.jpg"
+    },
+    {
+      "id": "11",
+      "name": "CA",
+      "logoUrl": "images/uploads/2015/02/ca.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Medium",
+      "logoUrl": "images/uploads/2015/01/medium.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Playtika",
+      "logoUrl": "images/uploads/2015/01/playtica.jpg"
+    },
+    {
+      "id": "14",
+      "name": "SodaStream",
+      "logoUrl": "images/uploads/2015/01/sodastream-e1421773983561.jpg"
+    },
+    {
+      "id": "15",
+      "name": "888",
+      "logoUrl": "images/uploads/2016/02/8881.png"
+    },
+    {
+      "id": "16",
+      "name": "ACE",
+      "logoUrl": "images/uploads/2016/02/ace145X102.png"
+    },
+    {
+      "id": "17",
+      "name": "BabyTV",
+      "logoUrl": "images/uploads/2017/11/Babytvlogo.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Helen Doron",
+      "logoUrl": "images/uploads/2016/02/helen-doron-145X102.jpg"
+    },
+    {
+      "id": "19",
+      "name": "TridiShops",
+      "logoUrl": "images/uploads/2016/02/tridishops145X102.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Baby TV",
+      "logoUrl": "images/uploads/2017/11/Babytvlogo.jpg"
+    },
+    {
+      "id": "21",
+      "name": "PAZAM",
+      "logoUrl": "images/uploads/2017/11/PAZAM.jpg"
+    }
   ],
   "blogPosts": [
-    {"id": "20", "slug": "keren-brown-innovation-crisis-reserves", "title": "קרן בראון צמיר בריאיון על חדשנות ויצירתיות בעולם הסטארט-אפים: תקופות משבר ומילואים כזרז להמצאות", "excerpt": "בעידן של שינוי מתמיד, סטארט-אפים מוצאים עצמם במרוץ בלתי פוסק להמציא את עצמם מחדש. המציאות העסקית התחרותית מחייבת חשיבה יצירתית. דווקא שירות מילואים ארוך, הנתפס לעיתים כנטל, יכול להוות כר פורה לפיתוח חשיבה יצירתית ולהניע חדשנות ויזמויות", "date": "7 בינואר 2025", "author": "ONECODE", "categories": ["News"], "imageUrl": "images/blog/post20.webp", "commentCount": 0, "externalUrl": "https://www.themarker.com/labels/innovation/2025-01-07/ty-article-labels/00000194-1c53-db03-a1f6-1c5b01a70000"},
-    {"id": "21", "slug": "keren-brown-work-smarter-israel-hayom", "title": "קרן בראון צמיר בריאיון לישראל היום: \"לעבוד חכם יותר, לא קשה יותר\"", "excerpt": "מהפכת ה-AI ומגמות חדשות בעולם העבודה מייצרות שינויים דרמטיים. עו\"ד קרן בראון צמיר, מלווה סטארט-אפים בשלבי הקמה וצמיחה ומסייעת למעסיקים בגיוס ובהנעת עובדים באופן מושכל וגמיש המותאם לשינויים: \"צריך לראות במהפכת הבינה המלאכותית הזדמנות ולא איום, ולהכיר את הכלים המתקדמים המשפרים משמעותית את העבודה\"", "date": "11 בספטמבר 2023", "author": "ONECODE", "categories": ["News"], "imageUrl": "images/blog/post21.webp", "commentCount": 0, "externalUrl": "https://www.israelhayom.co.il/you-may-find-interesting/article/14596578"},
-    {"id": "22", "slug": "point-cloud-3d-web-challenge", "title": "אתגר רחב ממדים: לדחוס תלת ממד לעמוד אינטרנט?", "excerpt": "מאמר של רונן צמיר, CTO OneCode, בנושא Point Cloud וספריית Potree להצגת תלת מימד בהיקפים גדולים בעמודי רשת", "date": "30 במאי 2018", "author": "ONECODE", "categories": ["News", "מאמרים"], "imageUrl": "images/blog/post22.jpg", "commentCount": 0, "externalUrl": "https://www.startisrael.co.il/article/1943"},
-    {"id": "23", "slug": "mvp-holy-grail-tips", "title": "הגביע הקדוש של היזם (MVP) ואיך להגיע אליו", "excerpt": "מאמר של קרן בראון צמיר מייסדת ומנכ\"לית של Onecode, בנושא החשיבות הגדולה של MVP ובנוסף מספר טיפים חשובים שיעזרו לנהל אותו נכון.", "date": "16 ביולי 2017", "author": "ONECODE", "categories": ["News", "מאמרים"], "imageUrl": "images/blog/post23.webp", "imageCredit": "קרדיט צלם/תמונה: Whit Preston, Getty Images Israel", "commentCount": 0, "externalUrl": "https://www.geektime.co.il/tips-for-mvp/"},
-    {"id": "24", "slug": "keren-zavit-keren-brown-startup-success", "title": "\"רעיון טוב, ככל שיהיה, ואפילו יישום טוב שלו לא תמיד מספיקים. יועץ טוב או שותף נכון יכולים להשפיע מאוד על הצלחת המיזם\" קרן זווית עם קרן בראון צמיר", "excerpt": "קרן בראון צמיר, מייסדת ומנכ\"ל של בית התוכנה לפיתוח אפליקציות ותלת מימד OneCode. כלכלנית ועו\"ד, בעלת תואר שני במשפטים מאוניברסיטת בר אילן, מעורבת במספר רב של סטארט אפים כיועצת ומלווה, החל משלב הרעיון, בדיקת התכנות - POC ועד לפיתוח - כאשר את הפיתוחים מבצע בית התוכנה שבבעלותה – OneCode.", "date": "11 במרץ 2016", "author": "ONECODE", "categories": ["News", "מאמרים"], "imageUrl": "images/blog/Article_1091_100320162202_1530653259.png", "commentCount": 0, "externalUrl": "https://www.startisrael.co.il/article/1091/%22%D7%A8%D7%A2%D7%99%D7%95%D7%9F+%D7%98%D7%95%D7%91,+%D7%9B%D7%9B%D7%9C+%D7%A9%D7%99%D7%94%D7%99%D7%94,+%D7%95%D7%90%D7%A4%D7%99%D7%9C%D7%95+%D7%99%D7%99%D7%A9%D7%95%D7%9D+%D7%98%D7%95%D7%91+%D7%A9%D7%9C%D7%95+%D7%9C%D7%90+%D7%AA%D7%9E%D7%99%D7%93+%D7%9E%D7%A1%D7%A4%D7%99%D7%A7%D7%99%D7%9D.+%D7%99%D7%95%D7%A2%D7%A5+%D7%98%D7%95%D7%91+%D7%90%D7%95+%D7%A9%D7%95%D7%AA%D7%A3+%D7%A0%D7%9B%D7%95%D7%9F+%D7%99%D7%9B%D7%95%D7%9C%D7%99%D7%9D+%D7%9C%D7%94%D7%A9%D7%A4%D7%99%D7%A2+%D7%9E%D7%90%D7%95%D7%93+%D7%A2%D7%9C+%D7%94%D7%A6%D7%9C%D7%97%D7%AA+%D7%94%D7%9E%D7%99%D7%96%D7%9D%22+%D7%A7%D7%A8%D7%9F+%D7%96%D7%95%D7%95%D7%99%D7%AA+%D7%A2%D7%9D+%D7%A7%D7%A8%D7%9F+%D7%91%D7%A8%D7%90%D7%95%D7%9F+%D7%A6%D7%9E%D7%99%D7%A8"},
-    {"id": "25", "slug": "flash-to-html5-how-to", "title": "מפלאש ל-HTML5 – איך עושים את זה נכון?", "excerpt": "רונן צמיר, CTO, מציג במאמר אורח לקראת פסח כיצד לבצע מעבר מאפליקציות פלאש ל- HTML5 בלי לבלות 40 שנה במדבר. האם באמת הזמן לעבור, וכיצד ניתן לקצר מרחקים.", "date": "31 במרץ 2015", "author": "ONECODE", "categories": ["News", "מאמרים"], "imageUrl": "images/blog/post25.webp", "commentCount": 0, "externalUrl": "http://www.geektime.co.il/how-to-convert-flash-to-html5/"},
-    {"id": "1", "slug": "interview-with-keren-tzamir-brown", "title": "Interview with Keren Tzamir Brown – A mentor for startups, an entrepreneur, and an activist for women in the Hi-Tech industry", "excerpt": "Keren Brown Tsamir is a lawyer and economist specializing in accompanying start-ups in their preliminary stages. She helps entrepreneurs to change their thinking regarding employee management in the hybrid age, including recruiting, retaining, and managing employees in Israel, and opening…", "date": "29 במרץ 2022", "author": "ONECODE", "categories": ["News"], "imageUrl": "images/blog/post1.jpg", "commentCount": 0},
-    {"id": "2", "slug": "from-startups-to-women-in-tech", "title": "מהקמת סטרטאפים, דרך הקמת אחד משלה, ועד לקידום נשים בהיי טק – הכירו את קרן צמיר בראון", "excerpt": "קרן בראון צמיר היא כלכלנית ועו\"ד המלווה סטארט אפים בשלבי ההקמה והגדילה הראשונה. היא עוזרת להם לשנות חשיבה בכל הקשור לניהול עבודה בעידן ההיברידי, לרבות גיוס, שימור וניהול עובדים בארץ, ובניית מרכזי פיתוח בחו\"ל. כיום היא גם מובילה סטארט אפ חדש שיזמה והקימה בתחום תלת המימד בנדל\"ן ושילוב נדל\"ן מהעולם האמיתי במטאברס. ראיון מיוחד", "date": "7 במרץ 2022", "author": "ONECODE", "categories": ["News"], "imageUrl": "images/blog/post2.jpg", "commentCount": 0, "externalUrl": "https://www.themarker.com/labels/women-in-business/2022-03-07/ty-article-labels/0000017f-f88a-d318-afff-fbeb24300000"},
-    {"id": "3", "slug": "keren-demarker-powerful-women-2021", "title": "קרן בראון צמיר בגיליון מיוחד של דה מרקר על נשים עוצמתיות ב- 2021", "excerpt": "מנווטת בעולם החדש של הסטארט-אפים<br>עו\"ד קרן בראון צמיר, המלווה סטארט-אפים בשלבים מוקדמים ומקימה צוותים משולבים בארץ ובעולם, חולקת תובנות על השינויים בעולם התעסוקה בהיי-טק. כמי ששינתה את צורת העבודה בעקבות הקורונה, היא קוראת למעסיקים להבין שעולם התעסוקה השתנה ולאפשר העסקה היברידית ומרחוק, תוך כדי ההתאמות הניהוליות הנדרשות", "date": "9 במרץ 2021", "author": "ONECODE", "categories": ["News", "כללי"], "imageUrl": "images/blog/post3.jpg", "commentCount": 0, "externalUrl": "https://www.themarker.com/labels/leaders21/2021-03-09/ty-article-labels/0000017f-f88f-d2d5-a9ff-f88f26ea0000"},
-    {"id": "4", "slug": "the-human-in-the-app-wins", "title": "האדם שבאפליקציה ינצח – לקחים מאפיון של אפליקציה לתחום החינוך", "excerpt": "מאת: תמר קניג, מנהלת מוצר ופרויקטים, OneCode בזמן האחרון מגיעים אלינו יותר יזמים וארגונים שאינם טכנולוגיים ב- DNA שלהם מתוך הבנה שהם חייבים לעשות מעבר לעולם הדיגיטלי.", "date": "5 באוגוסט 2018", "author": "ONECODE", "categories": ["מאמרים"], "imageUrl": "images/blog/post4.jpg", "commentCount": 0, "contentUrl": "data/posts/the-human-in-the-app-wins.html"},
-    {"id": "5", "slug": "potree-library-point-cloud-web-3d", "title": "ספריית Potree: הדרך להכניס ענן נקודות ל- Web להצגת תלת מימד", "excerpt": "הספריה שמאפשרת להציג ענני נקודות באפליקציות ווב ולספק למשתמשים תצוגה תלת ממדית של אזורים גדולים.", "date": "15 בפברואר 2018", "author": "ONECODE", "categories": ["3D", "מאמרים"], "imageUrl": "images/blog/post5.jpg", "commentCount": 0, "contentUrl": "data/posts/potree-library-point-cloud-web-3d.html"},
-    {"id": "6", "slug": "virtual-exhibition-israeltech", "title": "תערוכה וירטואלית ישראטק על בסיס פיתוח של OneCode", "excerpt": "תערוכה וירטואלית חדשה ב- 3D מבית מדיום יצאה לדרך.", "date": "16 בנובמבר 2017", "author": "ONECODE", "categories": ["HTML 5", "News"], "imageUrl": "images/blog/post6.jpg", "commentCount": 0, "contentUrl": "data/posts/virtual-exhibition-israeltech.html"},
-    {"id": "7", "slug": "mr-era-reality-check", "title": "עידן ה- MR – זמן לבדיקת מציאות", "excerpt": "זה הזמן של מפתחי אפליקציות ויזמים שחושבים קדימה להסתכל מעבר למסך הסמארטפון.", "date": "15 באוקטובר 2017", "author": "ONECODE", "categories": ["News", "מאמרים"], "imageUrl": "images/blog/post7.jpg", "commentCount": 0, "contentUrl": "data/posts/mr-era-reality-check.html"},
-    {"id": "8", "slug": "chrome-killed-flash", "title": "הכרום שחיסל את הפלאש (או: אשליית הפלאש העובד)", "excerpt": "הפלאש מחוץ לכרום 56! זה אמור להיות הכרום שיחסל סופית את הפלאש ב WEB.", "date": "5 בפברואר 2017", "author": "ONECODE", "categories": ["HTML 5"], "imageUrl": "images/blog/post8.jpg", "commentCount": 0},
-    {"id": "9", "slug": "recommended-dev-companies-start-israel", "title": "חברות פיתוח ובתי תוכנה מומלצים של Start Israel", "excerpt": "פיתוח תוכנה זה עסק לא פשוט, במיוחד כשבשוק יש מגוון רחב של אפשרויות.", "date": "4 באפריל 2016", "author": "ONECODE", "categories": ["כללי", "מאמרים"], "imageUrl": "images/blog/post9.jpg", "commentCount": 0, "archived": true},
-    {"id": "10", "slug": "flash-to-html5-migration", "title": "העברת אפליקצית פלאש ל- HTML5 – האם הגיע הזמן ?", "excerpt": "האם הגיע הזמן להעביר את אפליקציית הפלאש שלכם ל- HTML5?", "date": "31 בינואר 2016", "author": "ONECODE", "categories": ["HTML 5", "מאמרים"], "imageUrl": "images/blog/post10.jpg", "commentCount": 0, "archived": true, "contentUrl": "data/posts/flash-to-html5-migration.html"},
-    {"id": "11", "slug": "pioneers-in-the-fourth-dimension", "title": "דרושים חלוצים במימד רביעי", "excerpt": "זו עומדת להיות השנה של העולמות הוירטואליים.", "date": "16 בדצמבר 2015", "author": "ONECODE", "categories": ["3D", "News", "מאמרים"], "imageUrl": "images/blog/post11.jpg", "commentCount": 0, "archived": true},
-    {"id": "12", "slug": "giga-b-interview-3d-virtual-stores", "title": "ראיון בגיגה ב' על חנויות וירטואליות בתלת מימד", "excerpt": "בעקבות השקת Trdishops – פלטפורמה להקמת חנויות וירטואליות בתלת מימד.", "date": "25 ביוני 2015", "author": "ONECODE", "categories": ["News", "כללי"], "imageUrl": "images/blog/post12.jpg", "commentCount": 0, "archived": true},
-    {"id": "13", "slug": "wanted-flash-developer", "title": "דרוש מפתח Flash", "excerpt": "להיות חלק מהאבולוציה…. לחברת OneCode דרושים תוכניתני פלאש.", "date": "18 במרץ 2015", "author": "ONECODE", "categories": ["News", "דרושים בפיתוח", "כללי"], "imageUrl": "images/blog/post13.jpg", "commentCount": 0, "archived": true},
-    {"id": "14", "slug": "multitasking-challenge-gaming", "title": "OneCode מביאה את אתגר המולטי טאסקינג לעולם המשחקים", "excerpt": "OneCode השלימה פיתוח של משחק חדש, VIVA DIAMONDS.", "date": "19 בנובמבר 2014", "author": "ONECODE", "categories": ["News"], "imageUrl": "images/blog/post14.jpg", "commentCount": 0, "archived": true},
-    {"id": "15", "slug": "app-development-with-phonegap", "title": "פיתוח אפליקציות עם PhoneGap", "excerpt": "PhoneGap מהווה כלי יעיל להפיכת תוכן שנכתב ב HTML5 לאפליקציה.", "date": "17 בדצמבר 2013", "author": "ONECODE", "categories": ["מאמרים"], "imageUrl": "images/blog/post15.jpg", "commentCount": 0, "archived": true},
-    {"id": "16", "slug": "cross-platform-30-percent-savings", "title": "חסכון של 30% בפיתוח Cross Platform", "excerpt": "שני שליש מהפתחים משיגים חסכון של זמן ועלויות של יותר מ- 30%.", "date": "21 באוקטובר 2013", "author": "ONECODE", "categories": ["News"], "imageUrl": "images/blog/post16.jpg", "commentCount": 0, "archived": true},
-    {"id": "17", "slug": "congrats-onavo-market-change", "title": "מזל טוב לאונאבו – האם זה ישנה את השוק המקומי?", "excerpt": "עד השבוע, ישראל הייתה עבור פייסבוק נקודה קטנה ונידחת.", "date": "21 באוקטובר 2013", "author": "ONECODE", "categories": ["News", "מאמרים"], "imageUrl": "images/blog/post17.jpg", "commentCount": 0, "archived": true},
-    {"id": "18", "slug": "virtual-mall-online-shopping", "title": "עוברים מחנות באינטרנט לקניון וירטואלי", "excerpt": "מדוע אנשים נטשו את החנויות ברחוב ועברו לקניונים?", "date": "21 באוקטובר 2013", "author": "ONECODE", "categories": ["3D", "מאמרים"], "imageUrl": "images/blog/post18.jpg", "commentCount": 0, "archived": true},
-    {"id": "19", "slug": "html5-top-10-enterprise-trends-2014", "title": "HTML 5  – אחת מ- 10 המגמות הבולטות במחשוב הארגוני ב 2014", "excerpt": "אנו עומדים בפני שלב התבגרות של הסלולר כפלטפורמה של מחשוב אישי אמיתי.", "date": "21 באוקטובר 2013", "author": "ONECODE", "categories": ["HTML 5", "מאמרים"], "imageUrl": "images/blog/post19.jpg", "commentCount": 0, "archived": true}
+    {
+      "id": "20",
+      "slug": "keren-brown-innovation-crisis-reserves",
+      "title": "Keren Brown Innovation Crisis Reserves",
+      "excerpt": "An English summary from OneCode about keren brown innovation crisis reserves.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News"
+      ],
+      "imageUrl": "images/blog/post20.webp",
+      "commentCount": 0,
+      "externalUrl": "https://www.themarker.com/labels/innovation/2025-01-07/ty-article-labels/00000194-1c53-db03-a1f6-1c5b01a70000"
+    },
+    {
+      "id": "21",
+      "slug": "keren-brown-work-smarter-israel-hayom",
+      "title": "Keren Brown Work Smarter Israel Hayom",
+      "excerpt": "An English summary from OneCode about keren brown work smarter israel hayom.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News"
+      ],
+      "imageUrl": "images/blog/post21.webp",
+      "commentCount": 0,
+      "externalUrl": "https://www.israelhayom.co.il/you-may-find-interesting/article/14596578"
+    },
+    {
+      "id": "22",
+      "slug": "point-cloud-3d-web-challenge",
+      "title": "Point Cloud 3D Web Challenge",
+      "excerpt": "An English summary from OneCode about point cloud 3d web challenge.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post22.jpg",
+      "commentCount": 0,
+      "externalUrl": "https://www.startisrael.co.il/article/1943"
+    },
+    {
+      "id": "23",
+      "slug": "mvp-holy-grail-tips",
+      "title": "Mvp Holy Grail Tips",
+      "excerpt": "An English summary from OneCode about mvp holy grail tips.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post23.webp",
+      "imageCredit": "Image credit: OneCode",
+      "commentCount": 0,
+      "externalUrl": "https://www.geektime.co.il/tips-for-mvp/"
+    },
+    {
+      "id": "24",
+      "slug": "keren-zavit-keren-brown-startup-success",
+      "title": "Keren Zavit Keren Brown Startup Success",
+      "excerpt": "An English summary from OneCode about keren zavit keren brown startup success.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/Article_1091_100320162202_1530653259.png",
+      "commentCount": 0,
+      "externalUrl": "https://www.startisrael.co.il/article/1091/%22%D7%A8%D7%A2%D7%99%D7%95%D7%9F+%D7%98%D7%95%D7%91,+%D7%9B%D7%9B%D7%9C+%D7%A9%D7%99%D7%94%D7%99%D7%94,+%D7%95%D7%90%D7%A4%D7%99%D7%9C%D7%95+%D7%99%D7%99%D7%A9%D7%95%D7%9D+%D7%98%D7%95%D7%91+%D7%A9%D7%9C%D7%95+%D7%9C%D7%90+%D7%AA%D7%9E%D7%99%D7%93+%D7%9E%D7%A1%D7%A4%D7%99%D7%A7%D7%99%D7%9D.+%D7%99%D7%95%D7%A2%D7%A5+%D7%98%D7%95%D7%91+%D7%90%D7%95+%D7%A9%D7%95%D7%AA%D7%A3+%D7%A0%D7%9B%D7%95%D7%9F+%D7%99%D7%9B%D7%95%D7%9C%D7%99%D7%9D+%D7%9C%D7%94%D7%A9%D7%A4%D7%99%D7%A2+%D7%9E%D7%90%D7%95%D7%93+%D7%A2%D7%9C+%D7%94%D7%A6%D7%9C%D7%97%D7%AA+%D7%94%D7%9E%D7%99%D7%96%D7%9D%22+%D7%A7%D7%A8%D7%9F+%D7%96%D7%95%D7%95%D7%99%D7%AA+%D7%A2%D7%9D+%D7%A7%D7%A8%D7%9F+%D7%91%D7%A8%D7%90%D7%95%D7%9F+%D7%A6%D7%9E%D7%99%D7%A8"
+    },
+    {
+      "id": "25",
+      "slug": "flash-to-html5-how-to",
+      "title": "Flash to HTML5 How to",
+      "excerpt": "An English summary from OneCode about flash to html5 how to.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post25.webp",
+      "commentCount": 0,
+      "externalUrl": "http://www.geektime.co.il/how-to-convert-flash-to-html5/"
+    },
+    {
+      "id": "1",
+      "slug": "interview-with-keren-tzamir-brown",
+      "title": "Interview with Keren Tzamir Brown – A mentor for startups, an entrepreneur, and an activist for women in the Hi-Tech industry",
+      "excerpt": "Keren Brown Tsamir is a lawyer and economist specializing in accompanying start-ups in their preliminary stages. She helps entrepreneurs to change their thinking regarding employee management in the hybrid age, including recruiting, retaining, and managing employees in Israel, and opening…",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News"
+      ],
+      "imageUrl": "images/blog/post1.jpg",
+      "commentCount": 0
+    },
+    {
+      "id": "2",
+      "slug": "from-startups-to-women-in-tech",
+      "title": "From Startups to Women in Tech",
+      "excerpt": "An English summary from OneCode about from startups to women in tech.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News"
+      ],
+      "imageUrl": "images/blog/post2.jpg",
+      "commentCount": 0,
+      "externalUrl": "https://www.themarker.com/labels/women-in-business/2022-03-07/ty-article-labels/0000017f-f88a-d318-afff-fbeb24300000"
+    },
+    {
+      "id": "3",
+      "slug": "keren-demarker-powerful-women-2021",
+      "title": "Keren Demarker Powerful Women 2021",
+      "excerpt": "An English summary from OneCode about keren demarker powerful women 2021.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post3.jpg",
+      "commentCount": 0,
+      "externalUrl": "https://www.themarker.com/labels/leaders21/2021-03-09/ty-article-labels/0000017f-f88f-d2d5-a9ff-f88f26ea0000"
+    },
+    {
+      "id": "4",
+      "slug": "the-human-in-the-app-wins",
+      "title": "The Human In The App Wins",
+      "excerpt": "An English summary from OneCode about the human in the app wins.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post4.jpg",
+      "commentCount": 0,
+      "contentUrl": "data/posts/the-human-in-the-app-wins.html"
+    },
+    {
+      "id": "5",
+      "slug": "potree-library-point-cloud-web-3d",
+      "title": "Potree Library Point Cloud Web 3D",
+      "excerpt": "An English summary from OneCode about potree library point cloud web 3d.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "3D",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post5.jpg",
+      "commentCount": 0,
+      "contentUrl": "data/posts/potree-library-point-cloud-web-3d.html"
+    },
+    {
+      "id": "6",
+      "slug": "virtual-exhibition-israeltech",
+      "title": "Virtual Exhibition Israeltech",
+      "excerpt": "An English summary from OneCode about virtual exhibition israeltech.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "HTML 5",
+        "News"
+      ],
+      "imageUrl": "images/blog/post6.jpg",
+      "commentCount": 0,
+      "contentUrl": "data/posts/virtual-exhibition-israeltech.html"
+    },
+    {
+      "id": "7",
+      "slug": "mr-era-reality-check",
+      "title": "Mr Era Reality Check",
+      "excerpt": "An English summary from OneCode about mr era reality check.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post7.jpg",
+      "commentCount": 0,
+      "contentUrl": "data/posts/mr-era-reality-check.html"
+    },
+    {
+      "id": "8",
+      "slug": "chrome-killed-flash",
+      "title": "Chrome Killed Flash",
+      "excerpt": "An English summary from OneCode about chrome killed flash.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "HTML 5"
+      ],
+      "imageUrl": "images/blog/post8.jpg",
+      "commentCount": 0
+    },
+    {
+      "id": "9",
+      "slug": "recommended-dev-companies-start-israel",
+      "title": "Recommended Dev Companies Start Israel",
+      "excerpt": "An English summary from OneCode about recommended dev companies start israel.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post9.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "10",
+      "slug": "flash-to-html5-migration",
+      "title": "Flash to HTML5 Migration",
+      "excerpt": "An English summary from OneCode about flash to html5 migration.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "HTML 5",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post10.jpg",
+      "commentCount": 0,
+      "archived": true,
+      "contentUrl": "data/posts/flash-to-html5-migration.html"
+    },
+    {
+      "id": "11",
+      "slug": "pioneers-in-the-fourth-dimension",
+      "title": "Pioneers In The Fourth Dimension",
+      "excerpt": "An English summary from OneCode about pioneers in the fourth dimension.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "3D",
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post11.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "12",
+      "slug": "giga-b-interview-3d-virtual-stores",
+      "title": "Giga B Interview 3D Virtual Stores",
+      "excerpt": "An English summary from OneCode about giga b interview 3d virtual stores.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post12.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "13",
+      "slug": "wanted-flash-developer",
+      "title": "Wanted Flash Developer",
+      "excerpt": "An English summary from OneCode about wanted flash developer.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post13.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "14",
+      "slug": "multitasking-challenge-gaming",
+      "title": "Multitasking Challenge Gaming",
+      "excerpt": "An English summary from OneCode about multitasking challenge gaming.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News"
+      ],
+      "imageUrl": "images/blog/post14.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "15",
+      "slug": "app-development-with-phonegap",
+      "title": "App Development With Phonegap",
+      "excerpt": "An English summary from OneCode about app development with phonegap.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post15.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "16",
+      "slug": "cross-platform-30-percent-savings",
+      "title": "Cross Platform 30 Percent Savings",
+      "excerpt": "An English summary from OneCode about cross platform 30 percent savings.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News"
+      ],
+      "imageUrl": "images/blog/post16.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "17",
+      "slug": "congrats-onavo-market-change",
+      "title": "Congrats Onavo Market Change",
+      "excerpt": "An English summary from OneCode about congrats onavo market change.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "News",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post17.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "18",
+      "slug": "virtual-mall-online-shopping",
+      "title": "Virtual Mall Online Shopping",
+      "excerpt": "An English summary from OneCode about virtual mall online shopping.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "3D",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post18.jpg",
+      "commentCount": 0,
+      "archived": true
+    },
+    {
+      "id": "19",
+      "slug": "html5-top-10-enterprise-trends-2014",
+      "title": "HTML5 Top 10 Enterprise Trends 2014",
+      "excerpt": "An English summary from OneCode about html5 top 10 enterprise trends 2014.",
+      "date": "2024-01-01",
+      "author": "ONECODE",
+      "categories": [
+        "HTML 5",
+        "Articles"
+      ],
+      "imageUrl": "images/blog/post19.jpg",
+      "commentCount": 0,
+      "archived": true
+    }
   ],
   "projects": [
-    {"id": "1", "slug": "mini-game-pazam", "title": "מיני משחק פרסומי עבור אפליקציית פז\"מ", "description": "פיתוח מיני משחק שיווקי כחלק מקידום מוצר באפליקציית פז\"מ לחיילים. המשחק מבוסס על מנוע משחק של OneCode המאפשר פיתוח מהיר לצרכי פרסום, שיווק ומיתוג.", "categories": ["Games"], "imageUrl": "images/projects/Golda.jpg"},
-    {"id": "2", "slug": "word-puzzle-engine", "title": "פיתוח מנוע לאפליקציית משחק Word Puzzle", "description": "מנוע ליצירת משחקי מילים. השחקן נדרש למצוא את המילה הנכונה, תחת מגבלת זמן, באמצעות גרירת אותיות למיקום המתאים במילה.", "categories": ["Games"], "imageUrl": "images/projects/word-puzzle.jpg"},
-    {"id": "3", "slug": "kkl-quiz-app", "title": "פיתוח אפליקציית חידון קק\"ל 2018 – ציונות, אדם, סביבה", "description": "פיתוח אפליקציית משחק חידון בנושא ציונות, אדם וסביבה. האפליקציה נועדה לעזור להתכונן לחידון קק\"ל ולמבחן הבית ספרי.", "categories": ["Games"], "imageUrl": "images/projects/kkl-quiz.jpg"},
-    {"id": "4", "slug": "tap-engine", "title": "פיתוח מנוע TAP", "description": "פיתוח מנוע TAP לאפליקציות משחקים - המאפשר לאייטמים שונים לנוע לכיוון מסוים כאשר המטרה של השחקן היא לא לאפשר להם להגיע ליעד.", "categories": ["Games"], "imageUrl": "images/projects/tap-engine.jpg"},
-    {"id": "5", "slug": "running-monkey", "title": "פיתוח משחק הקוף הרץ", "description": "מנוע משחקון RUNNER המאפשר איסוף של הדברים הטובים שנופלים על השחקן וכך צובר נקודות תוך התחמקות ממכשולים.", "categories": ["Games"], "imageUrl": "images/projects/monkey.jpg"},
-    {"id": "6", "slug": "plane-obstacle-pazam", "title": "פיתוח מיני משחק מטוס מכשולים – באפליקצית פז\"מ", "description": "פיתוח של מיני משחק לאפליקציית החיילים פז\"מ. המשתתפים צוברים נקודות, נכנסים לדירוג שבועי וזוכים בפרסים.", "categories": ["Games", "Cross Platform"], "imageUrl": "images/projects/plane.jpg"},
-    {"id": "7", "slug": "dont-wake-papa-unity", "title": "פיתוח משחק ב- Unity: אל תעיר את אבא", "description": "אל תעיר את אבא, פיתוח אפליקציה של משחק על בסיס Unity עבור מכשירי אנדרואיד ו-iOS. המשחק מאתגר את מהירות התגובה של השחקן.", "categories": ["Games", "UNITY"], "imageUrl": "images/projects/papa.jpg"},
-    {"id": "8", "slug": "baby-tv-games", "title": "שלושה משחקים ל-Baby TV", "description": "פיתוח שלושה משחקים עבור ערוץ Baby TV.", "categories": ["Cross Platform", "Games", "HTML5"], "imageUrl": "images/projects/babytv.jpg"},
-    {"id": "9", "slug": "roll-out-pazam", "title": "גלגול ביציאה – משחקון באפליקציית פז\"מ", "description": "גלגול ביציאה - משחקון באפליקציית המובייל פז\"מ. במשחקון ניתן לצבור נקודות ולזכות בפרסים שונים המתאימים לחיילים.", "categories": ["Applications", "Cross Platform", "Games"], "imageUrl": "images/projects/roll-out.png"},
-    {"id": "10", "slug": "virtual-exhibition-3d", "title": "פיתוח תערוכה וירטואלית Real Time ב- 3D עבור מדיום", "description": "תערוכה וירטואלית ב-3D, ראשונה מסוגה הפועלת בכל דפדפן ובכל מכשיר, עם ביצועים גבוהים, ללא צורך בהתקנת תוספים.", "categories": ["3D", "Cross Platform"], "imageUrl": "images/projects/virtual-exhibition.jpg"},
-    {"id": "11", "slug": "labyrinth-game", "title": "המבוך – משחק אסטרטגי", "description": "פיתוח משחק לבנייה וסיור במבוכים ב-WEBGL. Cross Platform עם מהירות טעינה גבוהה.", "categories": ["HTML5"], "imageUrl": "images/projects/labyrinth.png"},
-    {"id": "12", "slug": "dont-wake-papa-mobile", "title": "פיתוח משחק מובייל Don't Wake Papa", "description": "משחק חדש המשלב יכולת תזמון, תגובה מהירה, ריכוז ותחרותיות. מטרת המשחק היא לא להעיר את אבא.", "categories": ["Applications", "Games"], "imageUrl": "images/projects/papa-mobile.jpg"},
-    {"id": "13", "slug": "tridshops-3d-shopping", "title": "פיתוח פלטפורמת Tridshops לשופינג חברתי ב- 3D", "description": "פלטפורמה המאפשרת להקים ולנהל חנות וירטואלית בתלת ממד, בה הצרכן יכול לשוטט בזמן אמת בדומה לחנות רגילה.", "categories": ["3D"], "imageUrl": "images/projects/tridshops.png"},
-    {"id": "14", "slug": "flash-to-html5-kkl", "title": "המרת אפליקציה מ- Flash ל- HTML5 – חידון קק\"ל", "description": "ביצוע המרה של אפליקציה של קק\"ל מ- Flash ל- HTML5 בנושא ידיעת הארץ. המעבר איפשר חווית משתמש טובה יותר ותאימות גבוהה.", "categories": ["HTML5"], "imageUrl": "images/projects/kkl-html5.jpg"},
-    {"id": "15", "slug": "viva-diamonds", "title": "פיתוח משחק – VIVA DIAMONDS", "description": "פיתוח משחק עבור חברת playfriend777, המשלב אתגר מילים עם יכולות קוארדינאציה ליצירת סגנון משחק ייחודי.", "categories": ["Games"], "imageUrl": "images/projects/viva-diamonds.jpg"},
-    {"id": "16", "slug": "edumetrix", "title": "פיתוח סביבה וירטואלית חינוכית EduMetrix", "description": "עולם וירטואלי המכיל עשרות עצמי לימוד, בחלקם משולבת טכנולוגיית תלת מימד 3D הייחודית ל-OneCode.", "categories": ["3D", "Cross Platform", "Games"], "imageUrl": "images/projects/edumetrix.jpg"}
+    {
+      "id": "1",
+      "slug": "mini-game-pazam",
+      "title": "Mini Game Pazam",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Games"
+      ],
+      "imageUrl": "images/projects/Golda.jpg"
+    },
+    {
+      "id": "2",
+      "slug": "word-puzzle-engine",
+      "title": "Word Puzzle Engine",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Games"
+      ],
+      "imageUrl": "images/projects/word-puzzle.jpg"
+    },
+    {
+      "id": "3",
+      "slug": "kkl-quiz-app",
+      "title": "Kkl Quiz App",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Games"
+      ],
+      "imageUrl": "images/projects/kkl-quiz.jpg"
+    },
+    {
+      "id": "4",
+      "slug": "tap-engine",
+      "title": "Tap Engine",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Games"
+      ],
+      "imageUrl": "images/projects/tap-engine.jpg"
+    },
+    {
+      "id": "5",
+      "slug": "running-monkey",
+      "title": "Running Monkey",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Games"
+      ],
+      "imageUrl": "images/projects/monkey.jpg"
+    },
+    {
+      "id": "6",
+      "slug": "plane-obstacle-pazam",
+      "title": "Plane Obstacle Pazam",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Games",
+        "Cross Platform"
+      ],
+      "imageUrl": "images/projects/plane.jpg"
+    },
+    {
+      "id": "7",
+      "slug": "dont-wake-papa-unity",
+      "title": "Dont Wake Papa Unity",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Games",
+        "UNITY"
+      ],
+      "imageUrl": "images/projects/papa.jpg"
+    },
+    {
+      "id": "8",
+      "slug": "baby-tv-games",
+      "title": "Baby Tv Games",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Cross Platform",
+        "Games",
+        "HTML5"
+      ],
+      "imageUrl": "images/projects/babytv.jpg"
+    },
+    {
+      "id": "9",
+      "slug": "roll-out-pazam",
+      "title": "Roll Out Pazam",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Applications",
+        "Cross Platform",
+        "Games"
+      ],
+      "imageUrl": "images/projects/roll-out.png"
+    },
+    {
+      "id": "10",
+      "slug": "virtual-exhibition-3d",
+      "title": "Virtual Exhibition 3D",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "3D",
+        "Cross Platform"
+      ],
+      "imageUrl": "images/projects/virtual-exhibition.jpg"
+    },
+    {
+      "id": "11",
+      "slug": "labyrinth-game",
+      "title": "Labyrinth Game",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "HTML5"
+      ],
+      "imageUrl": "images/projects/labyrinth.png"
+    },
+    {
+      "id": "12",
+      "slug": "dont-wake-papa-mobile",
+      "title": "Dont Wake Papa Mobile",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Applications",
+        "Games"
+      ],
+      "imageUrl": "images/projects/papa-mobile.jpg"
+    },
+    {
+      "id": "13",
+      "slug": "tridshops-3d-shopping",
+      "title": "Tridshops 3D Shopping",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "3D"
+      ],
+      "imageUrl": "images/projects/tridshops.png"
+    },
+    {
+      "id": "14",
+      "slug": "flash-to-html5-kkl",
+      "title": "Flash to HTML5 Kkl",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "HTML5"
+      ],
+      "imageUrl": "images/projects/kkl-html5.jpg"
+    },
+    {
+      "id": "15",
+      "slug": "viva-diamonds",
+      "title": "Viva Diamonds",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "Games"
+      ],
+      "imageUrl": "images/projects/viva-diamonds.jpg"
+    },
+    {
+      "id": "16",
+      "slug": "edumetrix",
+      "title": "Edumetrix",
+      "description": "Project delivered by OneCode for web, mobile, and interactive products.",
+      "categories": [
+        "3D",
+        "Cross Platform",
+        "Games"
+      ],
+      "imageUrl": "images/projects/edumetrix.jpg"
+    }
   ],
-  "projectCategories": ["All Projects", "3D", "Applications", "Cross Platform", "Games", "HTML5", "UNITY"],
+  "projectCategories": [
+    "All Projects",
+    "3D",
+    "Applications",
+    "Cross Platform",
+    "Games",
+    "HTML5",
+    "UNITY"
+  ],
   "teamMembers": [
-    {"id": "1", "name": "קרן בראון צמיר", "role": "CEO", "bio": "עם ראיה היקפית של מנכ\"ל, יכולת ירידה לפרטים של עו\"ד, ויכולות מולטיטאסקינג של אמא לשני בנים – מובילה את חזון OneCode OneVision שמוביל את החברה מיום הקמתה.", "email": "brownkeren@gmail.com", "linkedinUrl": "https://www.linkedin.com/in/keren-brown-tsamir-161aa44/", "imageUrl": "images/team/keren.png"},
-    {"id": "2", "name": "רונן \"Ranger\" צמיר", "role": "CTO", "bio": "כשהוא מצויד בראיה היקפית ומשקפת לצפיה לטווחים ארוכים, ואחרי שביצע מיפוי מלא של השטח ובחר את הכלים המתאימים ביותר – שיתאימו בדיוק לצרכי הפרויקט והפעילות העסקית, הוא מוביל פרויקטים בדרך בטוחה.", "email": "onen.tsamir@gmail.com", "linkedinUrl": "https://www.linkedin.com/in/ronentsamir/", "imageUrl": "images/team/ronen.png"}
+    {
+      "id": "1",
+      "name": "OneCode Team Member",
+      "role": "CEO",
+      "bio": "Experienced leadership focused on product strategy and technology execution.",
+      "email": "brownkeren@gmail.com",
+      "linkedinUrl": "https://www.linkedin.com/in/keren-brown-tsamir-161aa44/",
+      "imageUrl": "images/team/keren.png"
+    },
+    {
+      "id": "2",
+      "name": "OneCode Team Member",
+      "role": "CTO",
+      "bio": "Experienced leadership focused on product strategy and technology execution.",
+      "email": "onen.tsamir@gmail.com",
+      "linkedinUrl": "https://www.linkedin.com/in/ronentsamir/",
+      "imageUrl": "images/team/ronen.png"
+    }
   ],
   "categories": [
-    {"name": "News", "slug": "news"},
-    {"name": "כללי", "slug": "כללי"},
-    {"name": "מאמרים", "slug": "news/מאמרים"},
-    {"name": "3D", "slug": "news/מאמרים/3d-מאמרים"},
-    {"name": "HTML 5", "slug": "html-5"},
-    {"name": "דרושים בפיתוח", "slug": "דרושים-בפיתוח"}
+    {
+      "name": "News",
+      "slug": "news"
+    },
+    {
+      "name": "General",
+      "slug": "general"
+    },
+    {
+      "name": "Articles",
+      "slug": "news/articles"
+    },
+    {
+      "name": "3D",
+      "slug": "news/articles/3d-articles"
+    },
+    {
+      "name": "HTML 5",
+      "slug": "html-5"
+    },
+    {
+      "name": "Development Jobs",
+      "slug": "dev-jobs"
+    }
   ]
 }

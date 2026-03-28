@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nav.classList.toggle('nav-open');
       var isOpen = nav.classList.contains('nav-open');
       menuBtn.setAttribute('aria-expanded', isOpen);
-      menuBtn.setAttribute('aria-label', isOpen ? 'סגור תפריט' : 'פתח תפריט');
+      menuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     });
   }
 
