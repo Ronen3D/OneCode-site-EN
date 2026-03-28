@@ -2,7 +2,7 @@
 <!-- TODO: Update base URL below when deployment domain/subfolder is confirmed -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://onecodeworks.com/demos/site/</loc><priority>1.0</priority></url>
-  <url><loc>https://onecodeworks.com/demos/site/about-us/</loc><priority>0.8</priority></url>
+  <url><loc>https://onecodeworks.com/demos/site/about/</loc><priority>0.8</priority></url>
   <url><loc>https://onecodeworks.com/demos/site/contact/</loc><priority>0.8</priority></url>
   <url><loc>https://onecodeworks.com/demos/site/portfolio/</loc><priority>0.8</priority></url>
   <url><loc>https://onecodeworks.com/demos/site/blog/</loc><priority>0.8</priority></url>

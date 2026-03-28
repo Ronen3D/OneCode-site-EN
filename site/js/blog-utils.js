@@ -1,16 +1,25 @@
 /* Shared blog rendering utilities */
 var BlogUtils = {
-  parseDate: function (dateStr) {
-    var date = new Date(dateStr);
-    if (!isNaN(date.getTime())) return date;
-    var fallback = Date.parse(dateStr.replace(/,/g, ''));
-    return isNaN(fallback) ? new Date(0) : new Date(fallback);
+  _hebrewMonths: {
+    'בינואר': 0, 'בפברואר': 1, 'במרץ': 2, 'באפריל': 3,
+    'במאי': 4, 'ביוני': 5, 'ביולי': 6, 'באוגוסט': 7,
+    'בספטמבר': 8, 'באוקטובר': 9, 'בנובמבר': 10, 'בדצמבר': 11
+  },
+
+  parseHebrewDate: function (dateStr) {
+    var parts = dateStr.split(' ');
+    if (parts.length < 3) return new Date(0);
+    var day = parseInt(parts[0], 10);
+    var month = this._hebrewMonths[parts[1]];
+    var year = parseInt(parts[2], 10);
+    if (isNaN(day) || month === undefined || isNaN(year)) return new Date(0);
+    return new Date(year, month, day);
   },
 
   sortPostsByDate: function (posts) {
     var self = this;
     return posts.slice().sort(function (a, b) {
-      return self.parseDate(b.date) - self.parseDate(a.date);
+      return self.parseHebrewDate(b.date) - self.parseHebrewDate(a.date);
     });
   },
 
@@ -32,7 +41,7 @@ var BlogUtils = {
       '<div class="blog-card-body">' +
       '<h2 class="blog-card-title"><a href="' + siteBase + 'blog/' + post.slug + '/">' + post.title + '</a></h2>' +
       '<div class="blog-card-excerpt">' + post.excerpt + '</div>' +
-      '<a href="' + siteBase + 'blog/' + post.slug + '/" class="blog-card-readmore">Read more &rarr;</a>' +
+      '<a href="' + siteBase + 'blog/' + post.slug + '/" class="blog-card-readmore">קרא עוד &larr;</a>' +
       '<div class="blog-card-meta">' +
       '<span>' + post.date + '</span>' +
       '<span class="meta-separator">&middot;</span>' +
@@ -44,11 +53,11 @@ var BlogUtils = {
     var recent = this.sortPostsByDate(posts.filter(function (p) { return !p.archived; })).slice(0, 5);
     var html = '<div class="sidebar">' +
       '<div class="search-widget">' +
-      '<h3 class="widget-title">Search</h3>' +
-      '<input type="text" placeholder="Search...">' +
+      '<h3 class="widget-title">חיפוש</h3>' +
+      '<input type="text" placeholder="חיפוש...">' +
       '<button type="button">🔍</button>' +
       '</div>' +
-      '<div><h3 class="widget-title">Recent posts</h3>' +
+      '<div><h3 class="widget-title">פוסטים אחרונים</h3>' +
       '<ul class="sidebar-posts">';
     recent.forEach(function (p) {
       html += '<li>' +

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       for (var i = 0; i < data.blogPosts.length; i++) {
         if (data.blogPosts[i].slug === slug) { post = data.blogPosts[i]; postIndex = i; break; }
       }
-      if (!post) { document.getElementById('post-content').innerHTML = '<p>Post not found</p>'; return; }
+      if (!post) { document.getElementById('post-content').innerHTML = '<p>הפוסט לא נמצא</p>'; return; }
 
       /* Page title */
       document.title = post.title + ' - OneCode';
@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
       var breadcrumbEl = document.getElementById('post-breadcrumb');
       if (breadcrumbEl) {
         breadcrumbEl.innerHTML =
-          '<a href="' + siteBase + '">Home</a>' +
+          '<a href="' + siteBase + '">ראשי</a>' +
           '<span class="breadcrumb-separator">›</span>' +
-          '<a href="' + siteBase + 'blog/">Blog</a>' +
+          '<a href="' + siteBase + 'blog/">חדשות</a>' +
           '<span class="breadcrumb-separator">›</span>' +
           '<span>' + post.title + '</span>';
       }
@@ -61,15 +61,15 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         var body = '<p>' + post.excerpt + '</p>';
         if (post.externalUrl) {
-          body += '<p><a href="' + post.externalUrl + '" target="_blank" rel="noopener noreferrer" class="external-article-link">Read the full article &#8594;</a></p>';
+          body += '<p><a href="' + post.externalUrl + '" target="_blank" rel="noopener noreferrer" class="external-article-link">לכתבה המלאה &#8592;</a></p>';
         }
         document.getElementById('post-body').innerHTML = body;
       }
 
       /* Comments */
       document.getElementById('post-comments').innerHTML =
-        '<h2>Comments (' + post.commentCount + ')</h2>' +
-        '<h3 id="respond">Leave a reply</h3>';
+        '<h2>תגובות (' + post.commentCount + ')</h2>' +
+        '<h3 id="respond">השאירו תגובה</h3>';
 
       /* Related posts */
       var relatedEl = document.getElementById('related-posts');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (related.length === 0) {
           related = data.blogPosts.filter(function (p) { return p.slug !== post.slug; }).slice(0, 3);
         }
-        var relHtml = '<h3 class="related-posts-title">More articles</h3><div class="related-posts-grid">';
+        var relHtml = '<h3 class="related-posts-title">מאמרים נוספים</h3><div class="related-posts-grid">';
         related.forEach(function (r) {
           relHtml += '<div class="related-post-card">' +
             '<a href="' + siteBase + 'blog/' + r.slug + '/"><img src="' + siteBase + r.imageUrl + '" alt="' + r.title + '" loading="lazy"></a>' +
