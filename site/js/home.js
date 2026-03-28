@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     services.forEach(function (s) {
       var extra = '';
       if (s.id === '3') {
-        extra = ' <a href="' + siteBase + 'portfolio/" class="read-more-link">קרא עוד על One Vision</a>';
+        extra = ' <a href="' + siteBase + 'portfolio/" class="read-more-link">Read more about One Vision</a>';
       }
       var iconHtml = s.iconImage
         ? '<img src="' + siteBase + s.iconImage + '" alt="' + s.title + '" class="service-icon-img">'
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       html += '<div class="recent-blog-item">' +
         '<a href="' + siteBase + 'blog/' + p.slug + '/" class="recent-blog-image-wrap">' +
         '<img src="' + siteBase + p.imageUrl + '" alt="' + p.title + '" loading="lazy">' +
-        '<div class="recent-blog-overlay"><span>קרא עוד</span></div>' +
+        '<div class="recent-blog-overlay"><span>Read more</span></div>' +
         '</a>' +
         '<h3 class="recent-blog-title"><a href="' + siteBase + 'blog/' + p.slug + '/">' + p.title + '</a></h3>' +
         '<div class="recent-blog-meta">' + p.date + '</div>' +

@@ -113,7 +113,7 @@
 }
 
 .nav-item + .nav-item {
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .nav-link {
