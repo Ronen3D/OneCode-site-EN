@@ -40,14 +40,14 @@
 .strengths-list li {
   font-size: 0.95em;
   color: var(--color-text);
-  padding-right: 20px;
+  padding-left: 20px;
   position: relative;
 }
 
 .strengths-list li::before {
   content: "✓";
   position: absolute;
-  right: 0;
+  left: 0;
   color: var(--color-green);
   font-weight: 700;
 }
