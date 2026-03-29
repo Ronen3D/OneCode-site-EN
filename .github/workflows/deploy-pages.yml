@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - copilot/translate-full-site-to-english
+      - copilot/translate-site-content-accurately
       - main
   workflow_dispatch:
 
