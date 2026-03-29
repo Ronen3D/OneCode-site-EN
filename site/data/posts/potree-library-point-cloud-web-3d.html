@@ -1,29 +1,29 @@
-<p>הספריה שמאפשרת להציג ענני נקודות באפליקציות ווב ולספק למשתמשים תצוגה תלת ממדית של אזורים גדולים (אפילו עד מספר קילומטרים). עם ידע מתקדם ב- OneCode אנו יכולים לאפשר גם שיטוט במודל הוירטואלי, הצגה של שכבות מידע ובחינה של פרטים בדיוק של סנטימטרים ואף יותר.</p>
+<p>The library that enables displaying point clouds in web applications, providing users with 3D views of large areas (even spanning several kilometers). With OneCode's advanced expertise, we can also enable navigation through the virtual model, display of information layers, and examination of details at centimeter-level precision or better.</p>
 
-<p>אחד מהיישומים הצומחים ביותר בתלת מימד הוא סריקה של גופים ומרחבים והעברתם לדיגיטל.</p>
+<p>One of the fastest-growing applications in 3D is scanning objects and spaces and converting them to digital form.</p>
 
-<p>כאשר מעבדים את הסריקה, בין אם היא מבוצעת באמצעות תמונות, לייזר או אמצעי אחר, היא מתורגמת לאוסף של נקודות צבע במרחב הנקרא Point Cloud. על פי אוסף הנקודות הזה, תוכנות ואפליקציות שונות יכולות לתרגם אותן חזרה לאובייקט וירטואלי, שאותו ניתן להזיז, לסובב ואף לנוע בתוכו.</p>
+<p>When a scan is processed — whether captured by photography, laser, or another method — it is translated into a collection of colored points in space called a Point Cloud. Based on this collection of points, various software programs and applications can translate them back into a virtual object that can be moved, rotated, and even navigated through.</p>
 
-<p>כל נקודה ב- Point Cloud מקבלת ערכים של מיקום X, Y ו- Z וכן צבע RGB. לרוב, ענן הנקודות יורכב מתוך רצף של תמונות. שימוש נפוץ בענן נקודות מתקבל כאשר מעלים רחפן כדי לסרוק אתר תיירות, אתר בנייה או כל תא שטח אחר. הרחפן יצלם את השטח ממספר זוויות, ועל פי נתוני הזווית והמיקום של תמונה, ייבנה הענן. באופן דומה ניתן לסרוק בשיטה זו חדרים, רכבים, מטוסים, או כל אובייקט גדול אחר.</p>
+<p>Each point in a Point Cloud is assigned X, Y, and Z position values as well as an RGB color value. In most cases, the point cloud is built from a sequence of images. A common use case for point clouds arises when a drone is deployed to scan a tourism site, construction site, or any other terrain area. The drone photographs the area from multiple angles, and based on each image's angle and position data, the cloud is constructed. In a similar way, rooms, vehicles, aircraft, or any other large object can be scanned using this method.</p>
 
-<h3>בעיית הביצועים: מתמודדים עם ענן של מיליוני נקודות במרחב</h3>
+<h3>The Performance Problem: Handling a Cloud of Millions of Points in Space</h3>
 
-<p>כאשר נסרקים מרחבים או אובייקטים גדולים נוצר ענן נקודות עצום שיכול להגיע למיליארדי נקודות. לרוב הענן שנוצר גדול מכדי להיות מאוחסן על גבי זיכרון וכוח חישוב של מכשיר טלפון או אפילו מחשב רגיל, שלא לדבר על הורדה שלו דרך האינטרנט. כדי לאפשר הצגה של האובייקט – אותו שטח שצולם ונסרק – יש צורך לארגן את הנתונים (את ענן הנקודות) בשיטה חסכונית בזיכרון ועל פי סדר מסוים שיאפשר שליפה מהירה, ועריכה שלהם.</p>
+<p>When large spaces or objects are scanned, an enormous point cloud is created that can reach billions of points. In most cases, the resulting cloud is too large to be stored in the memory and computing power of a phone or even a regular computer, let alone downloaded over the internet. To enable the display of the object — the area that was photographed and scanned — the data (the point cloud) must be organized in a memory-efficient method and in a specific order that allows for fast retrieval and editing.</p>
 
-<h3>Potree עומדת במשימה</h3>
+<h3>Potree Is Up to the Task</h3>
 
-<p>Potree היא ספרייה שפותחה במיוחד כדי להציג ענני נקודות גדולים על פי שיטה מתקדמת וחסכונית שכזו, במיוחד עבור ה- Web. היתרון הגדול של Potree הוא היכולת להציג בכל רגע נתון למשתמש רק את המידע הרלוונטי עבורו, ובכך הוא מצמצם את כמות הנקודות שיש לעבד ואת כוח המחשב הנדרש. למעשה Potree הוא הכלי היחיד כיום להצגת מידע עשיר שכזה ב- WEB באופן יעיל.</p>
+<p>Potree is a library developed specifically to display large point clouds using an advanced, memory-efficient method, particularly for the Web. Potree's great advantage is its ability to show users only the information relevant to them at any given moment, thereby reducing the number of points to be processed and the computing power required. In fact, Potree is currently the only tool available for efficiently displaying such rich data on the Web.</p>
 
-<p>על פי האלגוריתם של Potree, אם נסתכל על התמונות מרחוק יוצג המספר המינימלי של נקודות על מנת שתמונת המודל תראה "חלקה" ו"שלמה", למרות שהיא לא תכיל את כל הנקודות. ככל שנתקרב, ונעשה זום, יותר ויותר נקודות ייחשפו לנו. נקודות אחרות, שאינן בתחום שדה הראיה שלנו כרגע, יוסרו בכדי לא להכביד על מנוע הרינדור של המחשב. הדבר דומה במקצת לדרך שבה עובדות מפות של גוגל.</p>
+<p>According to Potree's algorithm, when viewing from a distance, the minimum number of points necessary to make the model image appear "smooth" and "complete" will be displayed, even though it won't contain all the points. As you zoom in, more and more points are revealed. Other points that are currently outside your field of view are removed to avoid overloading the computer's rendering engine. This is somewhat similar to how Google Maps works.</p>
 
-<p>Potree, שנבנתה כספריית קוד פתוח מבוססת WebGL, נתמכת בעיקר על ידי חברת Rapidlasso ומספר תורמים נוספים. בניגוד להרבה ספריות שקיימות בשוק שיש להן API נגיש וברור, Potree אינה כזו. בכדי לקבל ביצועים טובים ולנצל בצורה מיטבית את היכולות שלה לעיבוד והצגת Point cloud יש צורך בידע מעמיק בגרפיקה תלת ממדית בכלל ובמנוע THREE.js בפרט.</p>
+<p>Potree, built as an open-source library based on WebGL, is supported primarily by the company Rapidlasso and several additional contributors. Unlike many libraries on the market that have accessible and clear APIs, Potree is not one of them. To achieve good performance and make the most of its capabilities for processing and displaying point clouds, deep knowledge of 3D graphics in general and the THREE.js engine in particular is required.</p>
 
-<p>באמצעות ידע שכזה ניתן להעשיר את הסביבה הזאת ולהתאימה לצרכים ייחודיים של כל אפליקציה. לדוגמה: שילוב של מודלים בסביבת 3D, מדידות שטחים ונפחים בדיוק גבוה, הצגה על גבי מפות, הצגה גרפית של נתונים (לדוגמה גובה פני השטח או מדידות חום) על פי צבעים, והשוואה בין שינויים לאורך זמן.</p>
+<p>With this kind of expertise, it is possible to enrich this environment and tailor it to the unique needs of each application. For example: integrating models in a 3D environment, high-precision area and volume measurements, overlay on maps, graphical display of data (such as elevation or heat measurements) by color, and comparison of changes over time.</p>
 
 <div class="post-video">
 <iframe width="696" height="705" src="https://www.youtube.com/embed/UmHzXEdITHc" title="Point Cloud Measuring Tools" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p>לסיכום, כאשר ניגשים להתמודד עם האתגר של הצגת תלת מימד וענני נתונים ברשת, Potree מספקת את הגישה היעילה ביותר, שתומכת בדרישות ל- Cross Platform ובהצגה היברידית של Point Cloud בכל מכשיר.</p>
+<p>In summary, when tackling the challenge of displaying 3D and data clouds on the web, Potree provides the most efficient approach — one that supports cross-platform requirements and hybrid Point Cloud display on any device.</p>
 
-<p>הידע שנצבר ב-OneCode וההתמחות בתלת מימד ובקליינטים עשירים, מאפשר לנו להתאים את העבודה עם Potree לדרישות הלקוח והפרויקט, כולל שימוש ברכיבים ייעודיים שיאפשרו חוויית משתמש מרבית, גם בתלת מימד.</p>
+<p>The expertise accumulated at OneCode and our specialization in 3D and rich client applications allows us to tailor the work with Potree to each client's and project's requirements, including the use of dedicated components that maximize the user experience — even in 3D.</p>
